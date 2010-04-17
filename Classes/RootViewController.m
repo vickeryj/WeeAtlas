@@ -66,6 +66,7 @@
 	[[NSBundle mainBundle] pathForResource:soundFile ofType:soundFileType];
 	CFURLRef url = CFURLCreateWithFileSystemPath(kCFAllocatorDefault, (CFStringRef)[[NSBundle mainBundle] pathForResource:soundFile ofType:soundFileType], kCFURLPOSIXPathStyle, false);
 	AudioServicesCreateSystemSoundID(url, &countryNameSound);
+	AudioServicesPlaySystemSound(countryNameSound);
 }
 
 // Override to allow orientations other than the default portrait orientation.
