@@ -277,7 +277,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>4</integer>
+									<integer>8</integer>
 									<integer>2</integer>
 									<integer>1</integer>
 									<integer>0</integer>
@@ -301,7 +301,7 @@
 							<real>224</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>119 92 1077 675 0 0 1280 778 </string>
+						<string>119 103 1077 675 0 0 1280 778 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -319,7 +319,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>A0E5C673117A352100E3957C</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>WeeAtlasViewController.m</string>
+								<string>RootViewController.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -327,11 +327,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>A0E5C674117A352100E3957C</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>WeeAtlasViewController.m</string>
+										<string>RootViewController.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>A0E5C7B9117A617F00E3957C</string>
+										<string>A0DBDC1B117A7F47009DD2AD</string>
 										<key>history</key>
 										<array>
 											<string>A0E5C69F117A3E6E00E3957C</string>
@@ -341,16 +341,17 @@
 											<string>A0E5C71F117A599200E3957C</string>
 											<string>A0E5C720117A599200E3957C</string>
 											<string>A0E5C723117A599200E3957C</string>
-											<string>A0E5C724117A599200E3957C</string>
 											<string>A0E5C725117A599200E3957C</string>
 											<string>A0E5C727117A599200E3957C</string>
 											<string>A0E5C73E117A5A2100E3957C</string>
 											<string>A0E5C75C117A5B4100E3957C</string>
 											<string>A0E5C777117A5C2400E3957C</string>
 											<string>A0E5C7B0117A60E300E3957C</string>
-											<string>A0E5C7B1117A60E300E3957C</string>
-											<string>A0E5C7B7117A617F00E3957C</string>
-											<string>A0E5C7B8117A617F00E3957C</string>
+											<string>A0DBDBCD117A7298009DD2AD</string>
+											<string>A0DBDBED117A7AF4009DD2AD</string>
+											<string>A0DBDBEE117A7AF4009DD2AD</string>
+											<string>A0DBDC00117A7D57009DD2AD</string>
+											<string>A0DBDC01117A7D57009DD2AD</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -364,18 +365,18 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {831, 587}}</string>
+								<string>{{0, 0}, {831, 459}}</string>
 								<key>RubberWindowFrame</key>
-								<string>119 92 1077 675 0 0 1280 778 </string>
+								<string>119 103 1077 675 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>587pt</string>
+							<string>459pt</string>
 						</dict>
 						<dict>
 							<key>Proportion</key>
-							<string>42pt</string>
+							<string>170pt</string>
 							<key>Tabs</key>
 							<array>
 								<dict>
@@ -389,7 +390,7 @@
 									<key>GeometryConfiguration</key>
 									<dict>
 										<key>Frame</key>
-										<string>{{10, 27}, {902, 71}}</string>
+										<string>{{10, 27}, {831, 17}}</string>
 									</dict>
 									<key>Module</key>
 									<string>XCDetailModule</string>
@@ -443,9 +444,9 @@
 									<key>GeometryConfiguration</key>
 									<dict>
 										<key>Frame</key>
-										<string>{{10, 27}, {831, 15}}</string>
+										<string>{{10, 27}, {831, 143}}</string>
 										<key>RubberWindowFrame</key>
-										<string>119 92 1077 675 0 0 1280 778 </string>
+										<string>119 103 1077 675 0 0 1280 778 </string>
 									</dict>
 									<key>Module</key>
 									<string>PBXBuildResultsModule</string>
@@ -473,11 +474,11 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>A0E5C72F117A599C00E3957C</string>
+				<string>A0DBDBD1117A7298009DD2AD</string>
 				<string>1CA23ED40692098700951B8B</string>
-				<string>A0E5C730117A599C00E3957C</string>
+				<string>A0DBDBD2117A7298009DD2AD</string>
 				<string>A0E5C673117A352100E3957C</string>
-				<string>A0E5C731117A599C00E3957C</string>
+				<string>A0DBDBD3117A7298009DD2AD</string>
 				<string>1CA23EDF0692099D00951B8B</string>
 				<string>1CA23EE00692099D00951B8B</string>
 				<string>1CA23EE10692099D00951B8B</string>
@@ -626,14 +627,14 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>A0E5C732117A599C00E3957C</string>
+				<string>A0DBDC1C117A7F47009DD2AD</string>
 				<string>1CCC7628064C1048000F2A68</string>
 				<string>1CCC7629064C1048000F2A68</string>
-				<string>A0E5C733117A599C00E3957C</string>
-				<string>A0E5C734117A599C00E3957C</string>
-				<string>A0E5C735117A599C00E3957C</string>
-				<string>A0E5C736117A599C00E3957C</string>
-				<string>A0E5C673117A352100E3957C</string>
+				<string>A0DBDC1D117A7F47009DD2AD</string>
+				<string>A0DBDC1E117A7F47009DD2AD</string>
+				<string>A0DBDC1F117A7F47009DD2AD</string>
+				<string>A0DBDC20117A7F47009DD2AD</string>
+				<string>A0DBDC21117A7F47009DD2AD</string>
 			</array>
 			<key>ToolbarConfigUserDefaultsMinorVersion</key>
 			<string>2</string>
@@ -670,7 +671,7 @@
 		<string>/Users/marturi/Projects/WeeAtlas/WeeAtlas.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>119 92 1077 675 0 0 1280 778 </string>
+	<string>119 103 1077 675 0 0 1280 778 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>

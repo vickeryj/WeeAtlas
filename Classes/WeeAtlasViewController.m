@@ -15,7 +15,10 @@
 @synthesize brazilButton, countryVC, splashView, mapView, countryView;
 
 - (IBAction) countryPressed {
-
+	NSNumber *countryTag = [NSNumber numberWithInt:brazilButton.tag];
+	NSDictionary *params = [NSDictionary dictionaryWithObject:countryTag forKey:@"countryTag"];
+	NSNotification *notification = [NSNotification notificationWithName:@"CountrySelected" object:nil userInfo:params];
+	[[NSNotificationCenter defaultCenter] postNotification:notification];
 }
 
 - (void) shrinkMapGrowCountry {

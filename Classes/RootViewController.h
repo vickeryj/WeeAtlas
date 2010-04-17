@@ -13,6 +13,7 @@
 @interface RootViewController : UIViewController {
 	WeeAtlasViewController *weeAtlasViewController;
 	CountryViewController *countryViewController;
+	NSNumber *currentCountry;
 }
 
 @end
