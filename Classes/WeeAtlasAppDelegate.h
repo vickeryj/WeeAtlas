@@ -8,16 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@class WeeAtlasViewController;
+@class RootViewController;
 
 @interface WeeAtlasAppDelegate : NSObject <UIApplicationDelegate> {
     UIWindow *window;
-	UIImageView *splashView;
-    WeeAtlasViewController *viewController;
+    IBOutlet RootViewController *viewController;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
-@property (nonatomic, retain) IBOutlet WeeAtlasViewController *viewController;
+@property (nonatomic, retain) IBOutlet RootViewController *viewController;
 
 @end
 
