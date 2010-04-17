@@ -24,8 +24,7 @@
 		A0E5C67B117A355100E3957C /* AtlasControl.m in Sources */ = {isa = PBXBuildFile; fileRef = A0E5C67A117A355100E3957C /* AtlasControl.m */; };
 		A0E5C686117A3AD700E3957C /* QuartzUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = A0E5C685117A3AD700E3957C /* QuartzUtils.m */; };
 		A0E5C68A117A3AF800E3957C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0E5C689117A3AF800E3957C /* QuartzCore.framework */; };
-		A0E5C698117A3CE600E3957C /* brazil005.gif in Resources */ = {isa = PBXBuildFile; fileRef = A0E5C697117A3CE600E3957C /* brazil005.gif */; };
-		A0E5C6D7117A4DEE00E3957C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = A0E5C6D6117A4DEE00E3957C /* Default.png */; };
+		A0E5C6D7117A4DEE00E3957C /* Default-Landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = A0E5C6D6117A4DEE00E3957C /* Default-Landscape.png */; };
 		A0E5C708117A54C000E3957C /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0E5C707117A54C000E3957C /* RootViewController.m */; };
 		A0E5C711117A58CD00E3957C /* RootView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0E5C710117A58CD00E3957C /* RootView.xib */; };
 /* End PBXBuildFile section */
@@ -56,8 +55,7 @@
 		A0E5C684117A3AD700E3957C /* QuartzUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuartzUtils.h; sourceTree = "<group>"; };
 		A0E5C685117A3AD700E3957C /* QuartzUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuartzUtils.m; sourceTree = "<group>"; };
 		A0E5C689117A3AF800E3957C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		A0E5C697117A3CE600E3957C /* brazil005.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = brazil005.gif; path = Images/brazil005.gif; sourceTree = "<group>"; };
-		A0E5C6D6117A4DEE00E3957C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = Images/Default.png; sourceTree = "<group>"; };
+		A0E5C6D6117A4DEE00E3957C /* Default-Landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Landscape.png"; path = "Images/Default-Landscape.png"; sourceTree = "<group>"; };
 		A0E5C706117A54C000E3957C /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		A0E5C707117A54C000E3957C /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		A0E5C710117A58CD00E3957C /* RootView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RootView.xib; sourceTree = "<group>"; };
@@ -173,9 +171,8 @@
 		A0E5C696117A3CD700E3957C /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				A0E5C6D6117A4DEE00E3957C /* Default.png */,
+				A0E5C6D6117A4DEE00E3957C /* Default-Landscape.png */,
 				35F4C39D117A5C33009823B1 /* main.png */,
-				A0E5C697117A3CE600E3957C /* brazil005.gif */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -224,9 +221,8 @@
 			files = (
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
 				2899E5220DE3E06400AC0155 /* WeeAtlasViewController.xib in Resources */,
-				A0E5C698117A3CE600E3957C /* brazil005.gif in Resources */,
 				35F4C2D8117A4448009823B1 /* CountryViewController.xib in Resources */,
-				A0E5C6D7117A4DEE00E3957C /* Default.png in Resources */,
+				A0E5C6D7117A4DEE00E3957C /* Default-Landscape.png in Resources */,
 				A0E5C711117A58CD00E3957C /* RootView.xib in Resources */,
 				35F4C39F117A5C33009823B1 /* main.png in Resources */,
 				A0DBDBE0117A73CD009DD2AD /* CountryProperties.plist in Resources */,

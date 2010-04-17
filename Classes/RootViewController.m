@@ -31,6 +31,9 @@
 												 name:@"GlobeSelected" 
 											   object:nil];
 	weeAtlasViewController = [[WeeAtlasViewController alloc] init];
+	CGRect mapRect = weeAtlasViewController.view.frame;
+	mapRect.origin.y += 26;
+	weeAtlasViewController.view.frame = mapRect;
 	[self.view addSubview:weeAtlasViewController.view];
 	[weeAtlasViewController growSplash];
 }
@@ -65,10 +68,14 @@
 	AudioServicesCreateSystemSoundID(url, &countryNameSound);
 }
 
+// Override to allow orientations other than the default portrait orientation.
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+    return UIInterfaceOrientationIsLandscape(interfaceOrientation);
+}
+
 - (void)dealloc {
 	[currentCountry release];
 	[weeAtlasViewController release];
-	[countryViewController release];
     [super dealloc];
 }
 
