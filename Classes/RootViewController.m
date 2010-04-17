@@ -22,34 +22,14 @@
 												 name:@"GlobeSelected" 
 											   object:nil];
 	weeAtlasViewController = [[WeeAtlasViewController alloc] init];
-	//[self.view addSubview:weeAtlasViewController.view];
+	[self.view addSubview:weeAtlasViewController.view];
+	[weeAtlasViewController growSplash];
 }
 
 - (void)handleCountryNav:(NSNumber*)countryTag {
 }
 
 - (void)handleReturnToGlobe {
-}
-
-/*
-// Override to allow orientations other than the default portrait orientation.
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
-*/
-
-- (void)didReceiveMemoryWarning {
-    // Releases the view if it doesn't have a superview.
-    [super didReceiveMemoryWarning];
-    
-    // Release any cached data, images, etc that aren't in use.
-}
-
-- (void)viewDidUnload {
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
 }
 
 

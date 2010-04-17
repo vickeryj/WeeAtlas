@@ -14,12 +14,21 @@
 @interface WeeAtlasViewController : UIViewController {
 	IBOutlet AtlasControl *brazilButton;
 	CountryViewController *countryVC;
+	UIView *splashView;
+	UIView *mapView;
+	UIView *countryView;
 }
 
 @property(nonatomic, retain) IBOutlet AtlasControl *brazilButton;
 @property(nonatomic, retain) CountryViewController *countryVC;
 
+@property(nonatomic, retain) IBOutlet UIView *splashView;
+@property(nonatomic, retain) IBOutlet UIView *mapView;
+@property(nonatomic, retain) IBOutlet UIView *countryView;
+
 - (IBAction) countryPressed;
+- (void) growSplash;
+
 
 @end
 
