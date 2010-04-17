@@ -255,7 +255,7 @@
 						<dict>
 							<key>PBXSmartGroupTreeModuleColumnWidthsKey</key>
 							<array>
-								<real>185</real>
+								<real>224</real>
 							</array>
 							<key>PBXSmartGroupTreeModuleColumnsKey_v4</key>
 							<array>
@@ -278,14 +278,13 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>6</integer>
-									<integer>4</integer>
+									<integer>8</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 0}, {185, 611}}</string>
+							<string>{{0, 0}, {224, 611}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -295,19 +294,19 @@
 					<key>GeometryConfiguration</key>
 					<dict>
 						<key>Frame</key>
-						<string>{{0, 0}, {202, 629}}</string>
+						<string>{{0, 0}, {241, 629}}</string>
 						<key>GroupTreeTableConfiguration</key>
 						<array>
 							<string>MainColumn</string>
-							<real>185</real>
+							<real>224</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>56 108 1148 670 0 0 1280 778 </string>
+						<string>26 108 1148 670 0 0 1280 778 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
 					<key>Proportion</key>
-					<string>202pt</string>
+					<string>241pt</string>
 				</dict>
 				<dict>
 					<key>Dock</key>
@@ -320,7 +319,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>A0E5C673117A352100E3957C</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>AtlasControl.m</string>
+								<string>WeeAtlasAppDelegate.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -328,11 +327,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>A0E5C674117A352100E3957C</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>AtlasControl.m</string>
+										<string>WeeAtlasAppDelegate.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>A0E5C6B4117A402800E3957C</string>
+										<string>A0E5C6C1117A47C500E3957C</string>
 										<key>history</key>
 										<array>
 											<string>A0E5C692117A3BBE00E3957C</string>
@@ -342,7 +341,10 @@
 											<string>A0E5C6B0117A402800E3957C</string>
 											<string>A0E5C6B1117A402800E3957C</string>
 											<string>A0E5C6B2117A402800E3957C</string>
-											<string>A0E5C6B3117A402800E3957C</string>
+											<string>A0E5C6BC117A47C500E3957C</string>
+											<string>A0E5C6BE117A47C500E3957C</string>
+											<string>A0E5C6BF117A47C500E3957C</string>
+											<string>A0E5C6C0117A47C500E3957C</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -356,18 +358,18 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {941, 486}}</string>
+								<string>{{0, 0}, {902, 529}}</string>
 								<key>RubberWindowFrame</key>
-								<string>56 108 1148 670 0 0 1280 778 </string>
+								<string>26 108 1148 670 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>486pt</string>
+							<string>529pt</string>
 						</dict>
 						<dict>
 							<key>Proportion</key>
-							<string>138pt</string>
+							<string>95pt</string>
 							<key>Tabs</key>
 							<array>
 								<dict>
@@ -381,9 +383,9 @@
 									<key>GeometryConfiguration</key>
 									<dict>
 										<key>Frame</key>
-										<string>{{10, 27}, {941, 111}}</string>
+										<string>{{10, 27}, {902, 68}}</string>
 										<key>RubberWindowFrame</key>
-										<string>56 108 1148 670 0 0 1280 778 </string>
+										<string>26 108 1148 670 0 0 1280 778 </string>
 									</dict>
 									<key>Module</key>
 									<string>XCDetailModule</string>
@@ -446,7 +448,7 @@
 						</dict>
 					</array>
 					<key>Proportion</key>
-					<string>941pt</string>
+					<string>902pt</string>
 				</dict>
 			</array>
 			<key>Name</key>
@@ -660,7 +662,7 @@
 		<string>/Users/marturi/Projects/WeeAtlas/WeeAtlas.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>56 108 1148 670 0 0 1280 778 </string>
+	<string>26 108 1148 670 0 0 1280 778 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>

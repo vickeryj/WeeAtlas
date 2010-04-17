@@ -16,6 +16,7 @@
 
 @implementation AtlasControl
 
+
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
 	CABasicAnimation *rotation;
 	rotation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
@@ -43,6 +44,7 @@
 	animation.animations = [NSArray arrayWithObjects:scaling, rotation, nil];
 	[self.layer addAnimation:animation forKey:@"animateLayer"];
 }
+
 
 - (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event {
     if(![super pointInside:point withEvent:(UIEvent *)event]) {
