@@ -56,17 +56,17 @@
 	self.mapView.hidden = NO;
 	self.mapView.alpha = 0;
 	[UIView beginAnimations:@"crossFadeSplashToMap" context:nil];
+	[UIView setAnimationDuration:1];
 	self.splashView.alpha = 0;
 	self.mapView.alpha = 1;
 	[UIView commitAnimations];
 }
 
-
-
 // Override to allow orientations other than the default portrait orientation.
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    return YES;
+    return UIInterfaceOrientationIsLandscape(interfaceOrientation);
 }
+
 - (void)dealloc {
 	[brazilButton release];
 	[countryVC release];

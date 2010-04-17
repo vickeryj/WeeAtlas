@@ -13,6 +13,9 @@
 @interface RootViewController : UIViewController {
 	WeeAtlasViewController *weeAtlasViewController;
 	CountryViewController *countryViewController;
+	UIView *splashView;
 }
+
+@property(nonatomic, retain) IBOutlet UIView *splashView;
 
 @end

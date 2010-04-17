@@ -11,6 +11,8 @@
 
 @implementation RootViewController
 
+@synthesize splashView;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
 	[[NSNotificationCenter defaultCenter] addObserver:self
@@ -22,6 +24,9 @@
 												 name:@"GlobeSelected" 
 											   object:nil];
 	weeAtlasViewController = [[WeeAtlasViewController alloc] init];
+	CGRect mapRect = weeAtlasViewController.view.frame;
+	mapRect.origin.y += 26;
+	weeAtlasViewController.view.frame = mapRect;
 	[self.view addSubview:weeAtlasViewController.view];
 	[weeAtlasViewController growSplash];
 }
@@ -32,9 +37,14 @@
 - (void)handleReturnToGlobe {
 }
 
+// Override to allow orientations other than the default portrait orientation.
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+    return UIInterfaceOrientationIsLandscape(interfaceOrientation);
+}
 
 - (void)dealloc {
 	[weeAtlasViewController release];
+	[splashView release];
     [super dealloc];
 }
 
