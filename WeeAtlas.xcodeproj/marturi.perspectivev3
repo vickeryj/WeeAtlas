@@ -302,7 +302,7 @@
 							<real>185</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>98 106 1148 670 0 0 1280 778 </string>
+						<string>56 108 1148 670 0 0 1280 778 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -332,14 +332,17 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>A0E5C6A3117A3E6E00E3957C</string>
+										<string>A0E5C6B4117A402800E3957C</string>
 										<key>history</key>
 										<array>
 											<string>A0E5C692117A3BBE00E3957C</string>
 											<string>A0E5C69F117A3E6E00E3957C</string>
 											<string>A0E5C6A0117A3E6E00E3957C</string>
-											<string>A0E5C6A1117A3E6E00E3957C</string>
-											<string>A0E5C6A2117A3E6E00E3957C</string>
+											<string>A0E5C6AE117A402800E3957C</string>
+											<string>A0E5C6B0117A402800E3957C</string>
+											<string>A0E5C6B1117A402800E3957C</string>
+											<string>A0E5C6B2117A402800E3957C</string>
+											<string>A0E5C6B3117A402800E3957C</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -355,7 +358,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {941, 486}}</string>
 								<key>RubberWindowFrame</key>
-								<string>98 106 1148 670 0 0 1280 778 </string>
+								<string>56 108 1148 670 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -380,7 +383,7 @@
 										<key>Frame</key>
 										<string>{{10, 27}, {941, 111}}</string>
 										<key>RubberWindowFrame</key>
-										<string>98 106 1148 670 0 0 1280 778 </string>
+										<string>56 108 1148 670 0 0 1280 778 </string>
 									</dict>
 									<key>Module</key>
 									<string>XCDetailModule</string>
@@ -657,7 +660,7 @@
 		<string>/Users/marturi/Projects/WeeAtlas/WeeAtlas.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>98 106 1148 670 0 0 1280 778 </string>
+	<string>56 108 1148 670 0 0 1280 778 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>

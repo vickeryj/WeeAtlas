@@ -12,6 +12,7 @@
 
 @interface WeeAtlasAppDelegate : NSObject <UIApplicationDelegate> {
     UIWindow *window;
+	UIImageView *splashView;
     WeeAtlasViewController *viewController;
 }
 
