@@ -231,8 +231,6 @@
 			<key>Layout</key>
 			<array>
 				<dict>
-					<key>BecomeActive</key>
-					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -279,13 +277,14 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>18</integer>
-									<integer>15</integer>
+									<integer>4</integer>
+									<integer>2</integer>
+									<integer>1</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 98}, {224, 616}}</string>
+							<string>{{0, 0}, {224, 616}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -302,7 +301,7 @@
 							<real>224</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>83 103 1077 675 0 0 1280 778 </string>
+						<string>119 92 1077 675 0 0 1280 778 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -313,12 +312,14 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>A0E5C673117A352100E3957C</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>WeeAtlas-Info.plist</string>
+								<string>WeeAtlasViewController.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -326,11 +327,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>A0E5C674117A352100E3957C</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>WeeAtlas-Info.plist</string>
+										<string>WeeAtlasViewController.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>A0E5C7A9117A5DE400E3957C</string>
+										<string>A0E5C7B9117A617F00E3957C</string>
 										<key>history</key>
 										<array>
 											<string>A0E5C69F117A3E6E00E3957C</string>
@@ -343,13 +344,13 @@
 											<string>A0E5C724117A599200E3957C</string>
 											<string>A0E5C725117A599200E3957C</string>
 											<string>A0E5C727117A599200E3957C</string>
-											<string>A0E5C729117A599200E3957C</string>
 											<string>A0E5C73E117A5A2100E3957C</string>
 											<string>A0E5C75C117A5B4100E3957C</string>
 											<string>A0E5C777117A5C2400E3957C</string>
-											<string>A0E5C778117A5C2400E3957C</string>
-											<string>A0E5C7A0117A5D8300E3957C</string>
-											<string>A0E5C7A7117A5DE200E3957C</string>
+											<string>A0E5C7B0117A60E300E3957C</string>
+											<string>A0E5C7B1117A60E300E3957C</string>
+											<string>A0E5C7B7117A617F00E3957C</string>
+											<string>A0E5C7B8117A617F00E3957C</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -365,7 +366,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {831, 587}}</string>
 								<key>RubberWindowFrame</key>
-								<string>83 103 1077 675 0 0 1280 778 </string>
+								<string>119 92 1077 675 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -444,7 +445,7 @@
 										<key>Frame</key>
 										<string>{{10, 27}, {831, 15}}</string>
 										<key>RubberWindowFrame</key>
-										<string>83 103 1077 675 0 0 1280 778 </string>
+										<string>119 92 1077 675 0 0 1280 778 </string>
 									</dict>
 									<key>Module</key>
 									<string>PBXBuildResultsModule</string>
@@ -669,7 +670,7 @@
 		<string>/Users/marturi/Projects/WeeAtlas/WeeAtlas.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>83 103 1077 675 0 0 1280 778 </string>
+	<string>119 92 1077 675 0 0 1280 778 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>

@@ -8,6 +8,7 @@
 
 #import "RootViewController.h"
 #import "WeeAtlasViewController.h"
+#import "CountryViewController.h"
 
 @implementation RootViewController
 
