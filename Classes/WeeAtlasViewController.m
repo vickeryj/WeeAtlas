@@ -44,10 +44,12 @@
 	[UIView setAnimationDidStopSelector:@selector(crossFadeSplashToMap)];
 	[UIView setAnimationDelegate:self];
 	CGRect splashRect = self.splashView.frame;
-	splashRect.origin.x = splashRect.origin.x - (splashRect.size.width/2);
-	splashRect.origin.y = splashRect.origin.y - (splashRect.size.height/2);
-	splashRect.size.width = splashRect.size.width * 2;
-	splashRect.size.height = splashRect.size.height * 2;
+	float newWidth = 2500;
+	float newHeight = 1550;
+	splashRect.origin.x = -740;
+	splashRect.origin.y = -400;
+	splashRect.size.width = newWidth;
+	splashRect.size.height = newHeight;
 	self.splashView.frame = splashRect;
 	[UIView commitAnimations];
 }
