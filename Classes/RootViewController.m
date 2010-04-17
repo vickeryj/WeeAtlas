@@ -8,6 +8,7 @@
 
 #import "RootViewController.h"
 #import "WeeAtlasViewController.h"
+#import "CountryViewController.h"
 
 @implementation RootViewController
 
@@ -22,7 +23,8 @@
 												 name:@"GlobeSelected" 
 											   object:nil];
 	weeAtlasViewController = [[WeeAtlasViewController alloc] init];
-	//[self.view addSubview:weeAtlasViewController.view];
+	countryViewController = [[CountryViewController alloc] init];
+	[self.view addSubview:weeAtlasViewController.view];
 }
 
 - (void)handleCountryNav:(NSNumber*)countryTag {
@@ -55,6 +57,7 @@
 
 - (void)dealloc {
 	[weeAtlasViewController release];
+	[countryViewController release];
     [super dealloc];
 }
 
