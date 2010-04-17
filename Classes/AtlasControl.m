@@ -16,9 +16,6 @@
 
 @implementation AtlasControl
 
-- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
-}
-
 - (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event {
     if(![super pointInside:point withEvent:(UIEvent *)event]) {
 		return NO;

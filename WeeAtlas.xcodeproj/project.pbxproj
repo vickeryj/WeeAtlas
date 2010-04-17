@@ -15,6 +15,8 @@
 		2899E5220DE3E06400AC0155 /* WeeAtlasViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* WeeAtlasViewController.xib */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		28D7ACF80DDB3853001CB0EB /* WeeAtlasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* WeeAtlasViewController.m */; };
+		35F4C2D7117A4448009823B1 /* CountryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F4C2D5117A4448009823B1 /* CountryViewController.m */; };
+		35F4C2D8117A4448009823B1 /* CountryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35F4C2D6117A4448009823B1 /* CountryViewController.xib */; };
 		A0E5C67B117A355100E3957C /* AtlasControl.m in Sources */ = {isa = PBXBuildFile; fileRef = A0E5C67A117A355100E3957C /* AtlasControl.m */; };
 		A0E5C686117A3AD700E3957C /* QuartzUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = A0E5C685117A3AD700E3957C /* QuartzUtils.m */; };
 		A0E5C68A117A3AF800E3957C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0E5C689117A3AF800E3957C /* QuartzCore.framework */; };
@@ -34,6 +36,9 @@
 		28D7ACF70DDB3853001CB0EB /* WeeAtlasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeeAtlasViewController.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* WeeAtlas_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeeAtlas_Prefix.pch; sourceTree = "<group>"; };
+		35F4C2D4117A4448009823B1 /* CountryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountryViewController.h; sourceTree = "<group>"; };
+		35F4C2D5117A4448009823B1 /* CountryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountryViewController.m; sourceTree = "<group>"; };
+		35F4C2D6117A4448009823B1 /* CountryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = CountryViewController.xib; path = Classes/CountryViewController.xib; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* WeeAtlas-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "WeeAtlas-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		A0E5C679117A355100E3957C /* AtlasControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AtlasControl.h; sourceTree = "<group>"; };
 		A0E5C67A117A355100E3957C /* AtlasControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AtlasControl.m; sourceTree = "<group>"; };
@@ -61,13 +66,12 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				35F4C2D3117A4317009823B1 /* View Controllers */,
+				A0E5C670117A351B00E3957C /* Views */,
 				A0E5C684117A3AD700E3957C /* QuartzUtils.h */,
 				A0E5C685117A3AD700E3957C /* QuartzUtils.m */,
-				A0E5C670117A351B00E3957C /* Views */,
 				1D3623240D0F684500981E51 /* WeeAtlasAppDelegate.h */,
 				1D3623250D0F684500981E51 /* WeeAtlasAppDelegate.m */,
-				28D7ACF60DDB3853001CB0EB /* WeeAtlasViewController.h */,
-				28D7ACF70DDB3853001CB0EB /* WeeAtlasViewController.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -106,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				A0E5C696117A3CD700E3957C /* Images */,
+				35F4C2D6117A4448009823B1 /* CountryViewController.xib */,
 				2899E5210DE3E06400AC0155 /* WeeAtlasViewController.xib */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* WeeAtlas-Info.plist */,
@@ -121,6 +126,17 @@
 				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		35F4C2D3117A4317009823B1 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				28D7ACF60DDB3853001CB0EB /* WeeAtlasViewController.h */,
+				28D7ACF70DDB3853001CB0EB /* WeeAtlasViewController.m */,
+				35F4C2D4117A4448009823B1 /* CountryViewController.h */,
+				35F4C2D5117A4448009823B1 /* CountryViewController.m */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 		A0E5C670117A351B00E3957C /* Views */ = {
@@ -185,6 +201,7 @@
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
 				2899E5220DE3E06400AC0155 /* WeeAtlasViewController.xib in Resources */,
 				A0E5C698117A3CE600E3957C /* brazil005.gif in Resources */,
+				35F4C2D8117A4448009823B1 /* CountryViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,6 +217,7 @@
 				28D7ACF80DDB3853001CB0EB /* WeeAtlasViewController.m in Sources */,
 				A0E5C67B117A355100E3957C /* AtlasControl.m in Sources */,
 				A0E5C686117A3AD700E3957C /* QuartzUtils.m in Sources */,
+				35F4C2D7117A4448009823B1 /* CountryViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
