@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AtlasControl.h"
 
 @interface WeeAtlasViewController : UIViewController {
-
+	IBOutlet AtlasControl *brazilButton;
 }
+
+@property(nonatomic, retain) IBOutlet AtlasControl *brazilButton;
 
 @end
 

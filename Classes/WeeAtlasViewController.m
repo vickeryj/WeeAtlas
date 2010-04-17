@@ -10,6 +10,7 @@
 
 @implementation WeeAtlasViewController
 
+@synthesize brazilButton = brazilButton;
 
 /*
 // The designated initializer. Override to perform setup that is required before the view is loaded.
@@ -55,6 +56,7 @@
 
 
 - (void)dealloc {
+	[brazilButton release];
     [super dealloc];
 }
 
