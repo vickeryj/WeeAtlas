@@ -50,7 +50,9 @@
 
 - (void) showVideo {
 	//load up an embedded youtube video
-	UIWebView *webContent = [[[UIWebView alloc] initWithFrame:self.contentScroller.bounds] autorelease];
+	webContent = [[UIWebView alloc] initWithFrame:self.contentScroller.bounds];
+	webContent.scalesPageToFit = YES;
+	webContent.userInteractionEnabled = NO;
 	[self.contentScroller addSubview:webContent];
 	NSString *movieURL = @"http://www.youtube.com/v/7WbrzlTnEQ4&hl=en_US&fs=1&";
 	
@@ -64,6 +66,10 @@
 								movieURL, movieURL];
 	
 	[webContent loadHTMLString:youtubeContent baseURL:nil];	
+}
+
+- (void)scrollViewDidScroll:(UIScrollView*)scrollView {
+	[webContent loadHTMLString:@"" baseURL:nil];	
 }
 
 - (void) contentShown {
@@ -105,6 +111,7 @@
 
 #pragma mark cleanup
 - (void)dealloc {
+	[webContent release];
 	[contentBackground release];
 	[contentScroller release];
 	[contentOverlayButton release];

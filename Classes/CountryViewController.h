@@ -9,12 +9,12 @@
 #import <UIKit/UIKit.h>
 
 
-@interface CountryViewController : UIViewController {
+@interface CountryViewController : UIViewController<UIScrollViewDelegate> {
 
 	UIView *contentBackground;
 	UIScrollView *contentScroller;
 	UIButton *contentOverlayButton;
-	
+	UIWebView *webContent;
 }
 
 @property(nonatomic, retain) IBOutlet UIView *contentBackground;
