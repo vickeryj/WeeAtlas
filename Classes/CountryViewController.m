@@ -38,7 +38,7 @@
 	
 	[UIView beginAnimations:@"showContent" context:nil];
 	[UIView setAnimationDelegate:self];
-	[UIView setAnimationDidStopSelector:@selector(contentShown)];
+	[UIView setAnimationDidStopSelector:@selector(contentContainerShown)];
 	[UIView setAnimationDuration:1];
 	
 	self.contentBackground.alpha = 1;
@@ -67,10 +67,23 @@
 	[webContent loadHTMLString:youtubeContent baseURL:nil];	
 }
 
-- (void) contentShown {
+- (void) showImage {
+	self.contentScroller.contentSize = CGSizeMake(self.contentScroller.frame.size.width * 2, 
+												  self.contentScroller.frame.size.height);
+	CGRect secondRect = self.contentScroller.bounds;
+	secondRect.origin.x = secondRect.size.width;
+	UIImageView *imageView = [[[UIImageView alloc] initWithFrame:secondRect] autorelease];
+	imageView.contentMode = UIViewContentModeCenter;
+	imageView.image = [UIImage imageNamed:@"toucan.jpg"];
+	[self.contentScroller addSubview:imageView];
+}
+
+- (void) contentContainerShown {
 	
 	//add the first bit of content
 	[self showVideo]; 
+	
+	[self showImage];
 	
 	// restore user interaction
 	[[UIApplication sharedApplication] endIgnoringInteractionEvents];

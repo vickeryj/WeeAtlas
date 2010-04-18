@@ -98,7 +98,7 @@
 						</object>
 						<reference key="IBUINormalTitleShadowColor" ref="314692602"/>
 					</object>
-					<object class="IBUIButton" id="307068236">
+					<object class="IBUIButton" id="386719702">
 						<reference key="NSNextResponder" ref="766721923"/>
 						<int key="NSvFlags">-2147483356</int>
 						<string key="NSFrameSize">{1024, 748}</string>
@@ -119,7 +119,7 @@
 						</object>
 						<reference key="IBUINormalTitleShadowColor" ref="314692602"/>
 					</object>
-					<object class="IBUIImageView" id="871506586">
+					<object class="IBUIImageView" id="663667859">
 						<reference key="NSNextResponder" ref="766721923"/>
 						<int key="NSvFlags">-2147483356</int>
 						<string key="NSFrame">{{187, 187}, {649, 374}}</string>
@@ -131,7 +131,7 @@
 							<string key="NSResourceName">video_container.png</string>
 						</object>
 					</object>
-					<object class="IBUIScrollView" id="889395300">
+					<object class="IBUIScrollView" id="400883560">
 						<reference key="NSNextResponder" ref="766721923"/>
 						<int key="NSvFlags">-2147483380</int>
 						<string key="NSFrame">{{196, 196}, {631, 355}}</string>
@@ -139,6 +139,7 @@
 						<bool key="IBUIClipsSubviews">YES</bool>
 						<bool key="IBUIMultipleTouchEnabled">YES</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
+						<bool key="IBUIPagingEnabled">YES</bool>
 						<bool key="IBUIBouncesZoom">NO</bool>
 					</object>
 				</object>
@@ -194,7 +195,7 @@
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">contentBackground</string>
 						<reference key="source" ref="841351856"/>
-						<reference key="destination" ref="871506586"/>
+						<reference key="destination" ref="663667859"/>
 					</object>
 					<int key="connectionID">12</int>
 				</object>
@@ -202,14 +203,14 @@
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">contentScroller</string>
 						<reference key="source" ref="841351856"/>
-						<reference key="destination" ref="889395300"/>
+						<reference key="destination" ref="400883560"/>
 					</object>
 					<int key="connectionID">13</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
 						<string key="label">contentOverlayButtonPressed</string>
-						<reference key="source" ref="307068236"/>
+						<reference key="source" ref="386719702"/>
 						<reference key="destination" ref="841351856"/>
 						<int key="IBEventType">7</int>
 					</object>
@@ -219,7 +220,7 @@
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">contentOverlayButton</string>
 						<reference key="source" ref="841351856"/>
-						<reference key="destination" ref="307068236"/>
+						<reference key="destination" ref="386719702"/>
 					</object>
 					<int key="connectionID">17</int>
 				</object>
@@ -252,9 +253,9 @@
 							<reference ref="766144627"/>
 							<reference ref="70448620"/>
 							<reference ref="458331789"/>
-							<reference ref="871506586"/>
-							<reference ref="889395300"/>
-							<reference ref="307068236"/>
+							<reference ref="663667859"/>
+							<reference ref="400883560"/>
+							<reference ref="386719702"/>
 						</object>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -277,19 +278,19 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">10</int>
-						<reference key="object" ref="871506586"/>
+						<reference key="object" ref="663667859"/>
 						<reference key="parent" ref="766721923"/>
 						<string key="objectName">contentBackground</string>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">11</int>
-						<reference key="object" ref="889395300"/>
+						<reference key="object" ref="400883560"/>
 						<reference key="parent" ref="766721923"/>
 						<string key="objectName">contentScroller</string>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">15</int>
-						<reference key="object" ref="307068236"/>
+						<reference key="object" ref="386719702"/>
 						<reference key="parent" ref="766721923"/>
 						<string key="objectName">contentOverlayButton</string>
 					</object>
