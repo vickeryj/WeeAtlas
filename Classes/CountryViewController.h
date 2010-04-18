@@ -13,4 +13,8 @@
 
 }
 
+
+- (IBAction)globePressed:(id)sender;
+- (IBAction) animalsButtonPressed;
+
 @end

@@ -11,6 +11,7 @@
 @protocol CountryControllerDelegateProtocol
 	
 - (void)controllerDidFinishSelectionAnimation:(UIViewController *)countryController;
+- (void)controllerDidFinishReturnToMapAnimation:(UIViewController *)countryController;
 
 @end
 
