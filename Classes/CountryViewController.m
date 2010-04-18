@@ -182,7 +182,7 @@
 
 - (IBAction)contentStripButtonPressed {
 	CGFloat pageWidth = self.contentScroller.frame.size.width;
-	[self.contentScroller scrollRectToVisible:CGRectMake(self.contentScroller.contentOffset.x, 0, pageWidth, 
+	[self.contentScroller scrollRectToVisible:CGRectMake(pageWidth, 0, pageWidth, 
 														 self.contentScroller.frame.size.height) animated:YES];
 }
 
