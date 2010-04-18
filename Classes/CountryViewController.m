@@ -31,7 +31,7 @@
 	self.contentBackground.hidden = NO;
 	self.contentBackground.alpha = 0;
 	self.contentScroller.hidden = NO;
-	self.contentBackground.alpha = 0;
+	self.contentScroller.alpha = 0;
 	
 	[UIView beginAnimations:@"showContent" context:nil];
 	[UIView setAnimationDelegate:self];
@@ -45,7 +45,28 @@
 	
 }
 
+- (void) showVideo {
+	//load up an embedded youtube video
+	UIWebView *webContent = [[[UIWebView alloc] initWithFrame:self.contentScroller.bounds] autorelease];
+	[self.contentScroller addSubview:webContent];
+	NSString *movieURL = @"http://www.youtube.com/v/7WbrzlTnEQ4&hl=en_US&fs=1&";
+	
+	NSString *youtubeTemplate = [NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"youtube_embed" 
+																								   ofType:@"html"]
+														  encoding:NSUTF8StringEncoding
+															 error:nil];
+	NSString *youtubeContent = [NSString stringWithFormat:youtubeTemplate,
+								[NSString stringWithFormat:@"%f", self.contentScroller.frame.size.width],
+								[NSString stringWithFormat:@"%f", self.contentScroller.frame.size.height],
+								movieURL, movieURL];
+	
+	[webContent loadHTMLString:youtubeContent baseURL:nil];	
+}
+
 - (void) contentShown {
+	//add the first bit of content
+	[self showVideo]; 
+	
 	// restore user interaction
 	[[UIApplication sharedApplication] endIgnoringInteractionEvents];
 }

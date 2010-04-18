@@ -25,6 +25,7 @@
 		35F4C5A1117A86CD009823B1 /* brasil.png in Resources */ = {isa = PBXBuildFile; fileRef = 35F4C59C117A86CD009823B1 /* brasil.png */; };
 		35F4C5A3117A86CD009823B1 /* video_container.png in Resources */ = {isa = PBXBuildFile; fileRef = 35F4C59E117A86CD009823B1 /* video_container.png */; };
 		35F4C5D0117AA406009823B1 /* forvo_en_254088.aif in Resources */ = {isa = PBXBuildFile; fileRef = 35F4C5CF117AA406009823B1 /* forvo_en_254088.aif */; };
+		35F4C6DD117B1A39009823B1 /* youtube_embed.html in Resources */ = {isa = PBXBuildFile; fileRef = 35F4C6DC117B1A39009823B1 /* youtube_embed.html */; };
 		A0DBDBC0117A7281009DD2AD /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0DBDBBF117A7281009DD2AD /* AudioToolbox.framework */; };
 		A0DBDBE0117A73CD009DD2AD /* CountryProperties.plist in Resources */ = {isa = PBXBuildFile; fileRef = A0DBDBDF117A73CD009DD2AD /* CountryProperties.plist */; };
 		A0E5C67B117A355100E3957C /* AtlasControl.m in Sources */ = {isa = PBXBuildFile; fileRef = A0E5C67A117A355100E3957C /* AtlasControl.m */; };
@@ -59,6 +60,7 @@
 		35F4C59C117A86CD009823B1 /* brasil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = brasil.png; path = Images/brasil.png; sourceTree = "<group>"; };
 		35F4C59E117A86CD009823B1 /* video_container.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = video_container.png; path = Images/video_container.png; sourceTree = "<group>"; };
 		35F4C5CF117AA406009823B1 /* forvo_en_254088.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = forvo_en_254088.aif; sourceTree = "<group>"; };
+		35F4C6DC117B1A39009823B1 /* youtube_embed.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = youtube_embed.html; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* WeeAtlas-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "WeeAtlas-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		A0DBDBBF117A7281009DD2AD /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		A0DBDBDF117A73CD009DD2AD /* CountryProperties.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CountryProperties.plist; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				35F4C6DB117B1A1F009823B1 /* HTML */,
 				A0E5C696117A3CD700E3957C /* Images */,
 				35F4C5CF117AA406009823B1 /* forvo_en_254088.aif */,
 				35F4C2D6117A4448009823B1 /* CountryViewController.xib */,
@@ -169,6 +172,14 @@
 				A0E5C707117A54C000E3957C /* RootViewController.m */,
 			);
 			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		35F4C6DB117B1A1F009823B1 /* HTML */ = {
+			isa = PBXGroup;
+			children = (
+				35F4C6DC117B1A39009823B1 /* youtube_embed.html */,
+			);
+			name = HTML;
 			sourceTree = "<group>";
 		};
 		A0E5C670117A351B00E3957C /* Views */ = {
@@ -251,6 +262,7 @@
 				35F4C5A1117A86CD009823B1 /* brasil.png in Resources */,
 				35F4C5A3117A86CD009823B1 /* video_container.png in Resources */,
 				35F4C5D0117AA406009823B1 /* forvo_en_254088.aif in Resources */,
+				35F4C6DD117B1A39009823B1 /* youtube_embed.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
