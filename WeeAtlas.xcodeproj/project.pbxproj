@@ -18,7 +18,6 @@
 		35F4C2D7117A4448009823B1 /* CountryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F4C2D5117A4448009823B1 /* CountryViewController.m */; };
 		35F4C2D8117A4448009823B1 /* CountryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35F4C2D6117A4448009823B1 /* CountryViewController.xib */; };
 		35F4C39F117A5C33009823B1 /* main.png in Resources */ = {isa = PBXBuildFile; fileRef = 35F4C39D117A5C33009823B1 /* main.png */; };
-		35F4C574117A83DB009823B1 /* brasil.png in Resources */ = {isa = PBXBuildFile; fileRef = 35F4C56F117A83DB009823B1 /* brasil.png */; };
 		35F4C576117A83DB009823B1 /* reel.png in Resources */ = {isa = PBXBuildFile; fileRef = 35F4C571117A83DB009823B1 /* reel.png */; };
 		35F4C577117A83DB009823B1 /* video_container.png in Resources */ = {isa = PBXBuildFile; fileRef = 35F4C572117A83DB009823B1 /* video_container.png */; };
 		35F4C589117A8429009823B1 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 35F4C588117A8429009823B1 /* Icon.png */; };
@@ -55,7 +54,6 @@
 		35F4C2D5117A4448009823B1 /* CountryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountryViewController.m; sourceTree = "<group>"; };
 		35F4C2D6117A4448009823B1 /* CountryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = CountryViewController.xib; path = Classes/CountryViewController.xib; sourceTree = "<group>"; };
 		35F4C39D117A5C33009823B1 /* main.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = main.png; path = Images/main.png; sourceTree = "<group>"; };
-		35F4C56F117A83DB009823B1 /* brasil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brasil.png; sourceTree = "<group>"; };
 		35F4C571117A83DB009823B1 /* reel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reel.png; sourceTree = "<group>"; };
 		35F4C572117A83DB009823B1 /* video_container.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = video_container.png; sourceTree = "<group>"; };
 		35F4C588117A8429009823B1 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
@@ -140,8 +138,8 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				A0DBDBEB117A78D2009DD2AD /* forvo_en_254088.mp3 */,
 				A0E5C696117A3CD700E3957C /* Images */,
+				A0DBDBEB117A78D2009DD2AD /* forvo_en_254088.mp3 */,
 				35F4C2D6117A4448009823B1 /* CountryViewController.xib */,
 				A0E5C710117A58CD00E3957C /* RootView.xib */,
 				2899E5210DE3E06400AC0155 /* WeeAtlasViewController.xib */,
@@ -195,7 +193,6 @@
 				35F4C59D117A86CD009823B1 /* reel.png */,
 				35F4C59E117A86CD009823B1 /* video_container.png */,
 				35F4C588117A8429009823B1 /* Icon.png */,
-				35F4C56F117A83DB009823B1 /* brasil.png */,
 				35F4C571117A83DB009823B1 /* reel.png */,
 				35F4C572117A83DB009823B1 /* video_container.png */,
 				A0E5C6D6117A4DEE00E3957C /* Default-Landscape.png */,
@@ -254,7 +251,6 @@
 				35F4C39F117A5C33009823B1 /* main.png in Resources */,
 				A0DBDBE0117A73CD009DD2AD /* CountryProperties.plist in Resources */,
 				A0DBDBEC117A78D2009DD2AD /* forvo_en_254088.mp3 in Resources */,
-				35F4C574117A83DB009823B1 /* brasil.png in Resources */,
 				35F4C576117A83DB009823B1 /* reel.png in Resources */,
 				35F4C577117A83DB009823B1 /* video_container.png in Resources */,
 				35F4C589117A8429009823B1 /* Icon.png in Resources */,
