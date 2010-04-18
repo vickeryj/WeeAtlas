@@ -44,8 +44,8 @@
 					<bool key="EncodedWithXMLCoder">YES</bool>
 					<object class="IBUIButton" id="401016365">
 						<reference key="NSNextResponder" ref="766721923"/>
-						<int key="NSvFlags">-2147483356</int>
-						<string key="NSFrame">{{245, 186}, {322, 328}}</string>
+						<int key="NSvFlags">292</int>
+						<string key="NSFrame">{{126, 299}, {322, 328}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -68,10 +68,11 @@
 							<int key="NSColorSpace">3</int>
 							<bytes key="NSWhite">MC41AA</bytes>
 						</object>
-						<object class="NSCustomResource" key="IBUINormalImage">
+						<object class="NSCustomResource" key="IBUIHighlightedImage" id="839150462">
 							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">brazil005.gif</string>
+							<string key="NSResourceName">brasil_with_shaddow.png</string>
 						</object>
+						<reference key="IBUINormalImage" ref="839150462"/>
 					</object>
 					<object class="IBUIImageView" id="877873601">
 						<reference key="NSNextResponder" ref="766721923"/>
@@ -545,13 +546,13 @@
 			<object class="NSArray" key="dict.sortedKeys">
 				<bool key="EncodedWithXMLCoder">YES</bool>
 				<string>Default-Landscape.png</string>
-				<string>brazil005.gif</string>
+				<string>brasil_with_shaddow.png</string>
 				<string>main.png</string>
 			</object>
 			<object class="NSMutableArray" key="dict.values">
 				<bool key="EncodedWithXMLCoder">YES</bool>
 				<string>{1024, 748}</string>
-				<string>{16, 16}</string>
+				<string>{217, 296}</string>
 				<string>{1024, 748}</string>
 			</object>
 		</object>
