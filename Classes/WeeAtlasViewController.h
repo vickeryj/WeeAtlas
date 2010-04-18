@@ -17,6 +17,7 @@
 	UIView *splashView;
 	UIView *mapView;
 	UIView *countryView;
+	UIView *countryButtonImage;
 }
 
 @property(nonatomic, retain) IBOutlet AtlasControl *brazilButton;
@@ -25,6 +26,7 @@
 @property(nonatomic, retain) IBOutlet UIView *splashView;
 @property(nonatomic, retain) IBOutlet UIView *mapView;
 @property(nonatomic, retain) IBOutlet UIView *countryView;
+@property(nonatomic, retain) IBOutlet UIView *countryButtonImage;
 
 - (IBAction) countryPressed;
 - (void) growSplash;

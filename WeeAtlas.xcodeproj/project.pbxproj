@@ -19,12 +19,10 @@
 		35F4C2D8117A4448009823B1 /* CountryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35F4C2D6117A4448009823B1 /* CountryViewController.xib */; };
 		35F4C39F117A5C33009823B1 /* main.png in Resources */ = {isa = PBXBuildFile; fileRef = 35F4C39D117A5C33009823B1 /* main.png */; };
 		35F4C576117A83DB009823B1 /* reel.png in Resources */ = {isa = PBXBuildFile; fileRef = 35F4C571117A83DB009823B1 /* reel.png */; };
-		35F4C577117A83DB009823B1 /* video_container.png in Resources */ = {isa = PBXBuildFile; fileRef = 35F4C572117A83DB009823B1 /* video_container.png */; };
 		35F4C589117A8429009823B1 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 35F4C588117A8429009823B1 /* Icon.png */; };
 		35F4C59F117A86CD009823B1 /* brasil_with_shaddow_pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 35F4C59A117A86CD009823B1 /* brasil_with_shaddow_pressed.png */; };
 		35F4C5A0117A86CD009823B1 /* brasil_with_shaddow.png in Resources */ = {isa = PBXBuildFile; fileRef = 35F4C59B117A86CD009823B1 /* brasil_with_shaddow.png */; };
 		35F4C5A1117A86CD009823B1 /* brasil.png in Resources */ = {isa = PBXBuildFile; fileRef = 35F4C59C117A86CD009823B1 /* brasil.png */; };
-		35F4C5A2117A86CD009823B1 /* reel.png in Resources */ = {isa = PBXBuildFile; fileRef = 35F4C59D117A86CD009823B1 /* reel.png */; };
 		35F4C5A3117A86CD009823B1 /* video_container.png in Resources */ = {isa = PBXBuildFile; fileRef = 35F4C59E117A86CD009823B1 /* video_container.png */; };
 		35F4C5D0117AA406009823B1 /* forvo_en_254088.aif in Resources */ = {isa = PBXBuildFile; fileRef = 35F4C5CF117AA406009823B1 /* forvo_en_254088.aif */; };
 		A0DBDBC0117A7281009DD2AD /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0DBDBBF117A7281009DD2AD /* AudioToolbox.framework */; };
@@ -55,12 +53,10 @@
 		35F4C2D6117A4448009823B1 /* CountryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = CountryViewController.xib; path = Classes/CountryViewController.xib; sourceTree = "<group>"; };
 		35F4C39D117A5C33009823B1 /* main.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = main.png; path = Images/main.png; sourceTree = "<group>"; };
 		35F4C571117A83DB009823B1 /* reel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reel.png; sourceTree = "<group>"; };
-		35F4C572117A83DB009823B1 /* video_container.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = video_container.png; sourceTree = "<group>"; };
 		35F4C588117A8429009823B1 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		35F4C59A117A86CD009823B1 /* brasil_with_shaddow_pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = brasil_with_shaddow_pressed.png; path = Images/brasil_with_shaddow_pressed.png; sourceTree = "<group>"; };
 		35F4C59B117A86CD009823B1 /* brasil_with_shaddow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = brasil_with_shaddow.png; path = Images/brasil_with_shaddow.png; sourceTree = "<group>"; };
 		35F4C59C117A86CD009823B1 /* brasil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = brasil.png; path = Images/brasil.png; sourceTree = "<group>"; };
-		35F4C59D117A86CD009823B1 /* reel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = reel.png; path = Images/reel.png; sourceTree = "<group>"; };
 		35F4C59E117A86CD009823B1 /* video_container.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = video_container.png; path = Images/video_container.png; sourceTree = "<group>"; };
 		35F4C5CF117AA406009823B1 /* forvo_en_254088.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = forvo_en_254088.aif; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* WeeAtlas-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "WeeAtlas-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
@@ -190,11 +186,9 @@
 				35F4C59A117A86CD009823B1 /* brasil_with_shaddow_pressed.png */,
 				35F4C59B117A86CD009823B1 /* brasil_with_shaddow.png */,
 				35F4C59C117A86CD009823B1 /* brasil.png */,
-				35F4C59D117A86CD009823B1 /* reel.png */,
 				35F4C59E117A86CD009823B1 /* video_container.png */,
 				35F4C588117A8429009823B1 /* Icon.png */,
 				35F4C571117A83DB009823B1 /* reel.png */,
-				35F4C572117A83DB009823B1 /* video_container.png */,
 				A0E5C6D6117A4DEE00E3957C /* Default-Landscape.png */,
 				35F4C39D117A5C33009823B1 /* main.png */,
 			);
@@ -251,12 +245,10 @@
 				35F4C39F117A5C33009823B1 /* main.png in Resources */,
 				A0DBDBE0117A73CD009DD2AD /* CountryProperties.plist in Resources */,
 				35F4C576117A83DB009823B1 /* reel.png in Resources */,
-				35F4C577117A83DB009823B1 /* video_container.png in Resources */,
 				35F4C589117A8429009823B1 /* Icon.png in Resources */,
 				35F4C59F117A86CD009823B1 /* brasil_with_shaddow_pressed.png in Resources */,
 				35F4C5A0117A86CD009823B1 /* brasil_with_shaddow.png in Resources */,
 				35F4C5A1117A86CD009823B1 /* brasil.png in Resources */,
-				35F4C5A2117A86CD009823B1 /* reel.png in Resources */,
 				35F4C5A3117A86CD009823B1 /* video_container.png in Resources */,
 				35F4C5D0117AA406009823B1 /* forvo_en_254088.aif in Resources */,
 			);

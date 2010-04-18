@@ -12,7 +12,7 @@
 
 @implementation WeeAtlasViewController
 
-@synthesize brazilButton, countryVC, splashView, mapView, countryView;
+@synthesize brazilButton, countryVC, splashView, mapView, countryView, countryButtonImage;
 
 - (IBAction) countryPressed {
 	NSNumber *countryTag = [NSNumber numberWithInt:brazilButton.tag];
@@ -23,23 +23,38 @@
 
 - (void) shrinkMapGrowCountry {
 	CGRect mapRect = self.mapView.frame;
-	CGRect copyOfMapRect = mapRect;
+	self.brazilButton.hidden = YES;
+	self.countryButtonImage.hidden = NO;
+
 	[UIView beginAnimations:@"shrinkMapGrowCountry" context:nil];
 	[UIView setAnimationDuration:3];
+	[UIView setAnimationDidStopSelector:@selector(hideButtonShowCountryView)];
+	[UIView setAnimationDelegate:self];
 	
 	mapRect.size.width = 100;
 	mapRect.size.height = 75;
-	self.mapView.frame = mapRect;
+	self.mapView.frame = mapRect;	
 	
-	CGRect countryRect = countryView.frame;
-	countryRect.origin.y = 0;
-	countryRect.origin.x = 0;
-	countryRect.size.width = copyOfMapRect.size.width;
-	countryRect.size.height = copyOfMapRect.size.height;
-	countryView.frame = countryRect;
+	CGRect countryRect = self.countryButtonImage.frame;
+	countryRect.origin.x = 281;
+	countryRect.origin.y = 117;
+	countryRect.size.width = 520;
+	countryRect.size.height = 549;
+	self.countryButtonImage.frame = countryRect;
 	
 	[UIView commitAnimations];
 }
+
+- (void) hideButtonShowCountryView {
+	countryView.hidden = NO;
+	countryView.alpha = 0;
+
+	[UIView beginAnimations:@"hideButtonShowCountryView" context:nil];
+	countryView.alpha = 1;
+	brazilButton.alpha = 0;
+	[UIView commitAnimations];
+}
+	
 
 - (void) growSplash {
 	[UIView beginAnimations:@"zoomSplash" context:nil];
@@ -84,6 +99,7 @@
 	[splashView release];
 	[mapView release];
 	[countryView release];
+	[countryButtonImage release];
     [super dealloc];
 }
 

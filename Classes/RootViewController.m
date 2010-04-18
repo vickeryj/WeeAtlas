@@ -41,6 +41,7 @@
 - (void)handleCountryNav:(NSNotification*)countryNotification {
 	NSDictionary *params = [countryNotification userInfo];
 	currentCountry = [params valueForKey:@"countryTag"];
+	[weeAtlasViewController shrinkMapGrowCountry];
 	[self playCountryName];
 }
 
