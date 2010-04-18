@@ -19,6 +19,7 @@
 @implementation CountryViewController
 
 @synthesize contentBackground, contentScroller, contentOverlayButton, contentStripButton;
+@synthesize animalsButton, sambaButton, capoeiraButton;
 
 - (IBAction)globePressed:(id)sender {
 	
@@ -53,6 +54,10 @@
 	self.contentScroller.alpha = 1;
 	self.contentOverlayButton.alpha = 1;
 	self.contentStripButton.alpha = 1;
+	
+	self.animalsButton.alpha = 0;
+	self.sambaButton.alpha = 0;
+	self.capoeiraButton.alpha = 0;
 	
 	[UIView commitAnimations];
 	
@@ -133,9 +138,21 @@
 }
 
 - (IBAction)contentOverlayButtonPressed {
-	self.contentOverlayButton.hidden = YES;
-	self.contentScroller.hidden = YES;
-	self.contentBackground.hidden = YES;
+	
+	[UIView beginAnimations:@"hideContent" context:nil];
+	[UIView setAnimationDuration:1];
+	
+	
+	self.contentOverlayButton.alpha = 0;
+	self.contentScroller.alpha = 0;
+	self.contentBackground.alpha = 0;
+	self.contentStripButton.alpha = 0;
+	
+	self.animalsButton.alpha = 1;
+	self.sambaButton.alpha = 1;
+	self.capoeiraButton.alpha = 1;
+	
+	[UIView commitAnimations];
 }
 
 - (IBAction)contentStripButtonPressed {
@@ -149,8 +166,10 @@
 	[contentScroller release];
 	[contentOverlayButton release];
 	[contentStripButton release];
+	[animalsButton release];
+	[sambaButton release];
+	[capoeiraButton release];
     [super dealloc];
 }
-
 
 @end
