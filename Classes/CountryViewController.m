@@ -12,6 +12,7 @@
 
 - (void) stopClip;
 - (void) playClip;
+- (UIButton *)findButtonInView:(UIView *)view;
 
 @end
 
@@ -61,7 +62,7 @@
 - (void) showVideo {
 	//load up an embedded youtube video
 	webContent = [[UIWebView alloc] initWithFrame:self.contentScroller.bounds];
-	webContent.scalesPageToFit = YES;
+	webContent.scalesPageToFit = NO;
 	webContent.userInteractionEnabled = NO;
 	[self.contentScroller addSubview:webContent];
 	[self playClip];
@@ -99,6 +100,28 @@
 	} else {
 		[self playClip];
 	}
+}
+
+- (UIButton *)findButtonInView:(UIView *)view {
+	UIButton *button = nil;
+	
+	if ([view isMemberOfClass:[UIButton class]]) {
+		return (UIButton *)view;
+	}
+	
+	if (view.subviews && [view.subviews count] > 0) {
+		for (UIView *subview in view.subviews) {
+			button = [self findButtonInView:subview];
+			if (button) return button;
+		}
+	}
+	
+	return button;
+}
+
+- (void)webViewDidFinishLoad:(UIWebView *)_webView {
+	UIButton *b = [self findButtonInView:_webView];
+	[b sendActionsForControlEvents:UIControlEventTouchUpInside];
 }
 
 - (void) contentShown {

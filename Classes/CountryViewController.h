@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 
-@interface CountryViewController : UIViewController<UIScrollViewDelegate> {
+@interface CountryViewController : UIViewController<UIScrollViewDelegate,UIWebViewDelegate> {
 
 	UIView *contentBackground;
 	UIScrollView *contentScroller;
