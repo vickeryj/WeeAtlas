@@ -48,7 +48,6 @@
 	[UIView beginAnimations:@"showContent" context:nil];
 	[UIView setAnimationDelegate:self];
 	[UIView setAnimationDidStopSelector:@selector(contentShown)];
-	[UIView setAnimationDidStopSelector:@selector(contentContainerShown)];
 	[UIView setAnimationDuration:1];
 	
 	self.contentBackground.alpha = 1;
@@ -64,20 +63,51 @@
 	
 }
 
-- (void) showVideo {
+
+- (void) showContent {
+	
+	//TODO this is all hardcoded, sorry
+	
+	self.contentScroller.contentSize = CGSizeMake(self.contentScroller.frame.size.width * 4, 
+												  self.contentScroller.frame.size.height);
+	
+	
+	CGRect contentRect = self.contentScroller.bounds;
+
+	UIImageView *imageView = [[[UIImageView alloc] initWithFrame:contentRect] autorelease];
+	imageView.contentMode = UIViewContentModeCenter;
+	imageView.image = [UIImage imageNamed:@"macaw.png"];
+	[self.contentScroller addSubview:imageView];
+	
+	
+	contentRect.origin.x += contentRect.size.width;
+
 	//load up an embedded youtube video
-	webContent = [[UIWebView alloc] initWithFrame:self.contentScroller.bounds];
+	webContent = [[UIWebView alloc] initWithFrame:contentRect];
 	webContent.scalesPageToFit = NO;
 	webContent.userInteractionEnabled = NO;
 	webContent.delegate = self;
 	[self.contentScroller addSubview:webContent];
-	[self playClip];
+	
+	contentRect.origin.x += contentRect.size.width;
+	
+	imageView = [[[UIImageView alloc] initWithFrame:contentRect] autorelease];
+	imageView.contentMode = UIViewContentModeCenter;
+	imageView.image = [UIImage imageNamed:@"frog.png"];
+	[self.contentScroller addSubview:imageView];
+	
+	contentRect.origin.x += contentRect.size.width;
+
+	imageView = [[[UIImageView alloc] initWithFrame:contentRect] autorelease];
+	imageView.contentMode = UIViewContentModeCenter;
+	imageView.image = [UIImage imageNamed:@"aligators.png"];
+	[self.contentScroller addSubview:imageView];
+	
 }
 
 - (void) playClip {
-	NSLog(@"playing clip");
 	clipPlaying = YES;
-	NSString *movieURL = @"http://www.youtube.com/v/7WbrzlTnEQ4&hl=en_US&fs=1&";
+	NSString *movieURL = @"http://www.youtube.com/v/1xLbBdmVSaU&hl=en_US&fs=1&";
 	NSString *youtubeTemplate = [NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"youtube_embed" 
 																								   ofType:@"html"]
 														  encoding:NSUTF8StringEncoding
@@ -97,13 +127,14 @@
 	}
 }
 
+#pragma mark UIScrollViewDelegate
 - (void)scrollViewDidScroll:(UIScrollView*)scrollView {
 	[webContent loadHTMLString:@"" baseURL:nil];
 	CGFloat pageWidth = scrollView.frame.size.width;
-    int page = floor((scrollView.contentOffset.x - pageWidth / 2) / pageWidth) + 1;
-	if(page > 0) {
+    currentPage = floor((scrollView.contentOffset.x - pageWidth / 2) / pageWidth) + 1;
+	if(currentPage != 1) {
 		[self stopClip];
-	} else {
+	} else if (currentPage == 1) {
 		[self playClip];
 	}
 }
@@ -131,31 +162,8 @@
 }
 
 - (void) contentShown {
-	
-	//add the first bit of content
-	[self showVideo]; 
-	
-	// restore user interaction
-	[[UIApplication sharedApplication] endIgnoringInteractionEvents];
-}
 
-- (void) showImage {
-	self.contentScroller.contentSize = CGSizeMake(self.contentScroller.frame.size.width * 2, 
-												  self.contentScroller.frame.size.height);
-	CGRect secondRect = self.contentScroller.bounds;
-	secondRect.origin.x = secondRect.size.width;
-	UIImageView *imageView = [[[UIImageView alloc] initWithFrame:secondRect] autorelease];
-	imageView.contentMode = UIViewContentModeCenter;
-	imageView.image = [UIImage imageNamed:@"toucan.jpg"];
-	[self.contentScroller addSubview:imageView];
-}
-
-- (void) contentContainerShown {
-	
-	//add the first bit of content
-	[self showVideo]; 
-	
-	[self showImage];
+	[self showContent]; 
 	
 	// restore user interaction
 	[[UIApplication sharedApplication] endIgnoringInteractionEvents];
@@ -180,7 +188,11 @@
 }
 
 - (IBAction)contentStripButtonPressed {
-	
+	CGFloat pageWidth = self.contentScroller.frame.size.width;
+	CGFloat xoffset = (currentPage + 1) * pageWidth;
+
+	[self.contentScroller scrollRectToVisible:CGRectMake(xoffset, 0, pageWidth, 
+														 self.contentScroller.frame.size.height) animated:YES];
 }
 
 #pragma mark cleanup
