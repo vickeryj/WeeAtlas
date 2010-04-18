@@ -111,7 +111,7 @@
 
 - (void) playClip {
 	clipPlaying = YES;
-	NSString *movieURL = @"http://www.youtube.com/v/1xLbBdmVSaU&hl=en_US&fs=1&";
+	NSString *movieURL = @"http://www.youtube.com/v/Any6gB_tsag&hl=en_US&fs=1&";
 	NSString *youtubeTemplate = [NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"youtube_embed" 
 																								   ofType:@"html"]
 														  encoding:NSUTF8StringEncoding
