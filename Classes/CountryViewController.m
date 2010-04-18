@@ -11,7 +11,7 @@
 
 @implementation CountryViewController
 
-@synthesize contentBackground, contentScroller;
+@synthesize contentBackground, contentScroller, contentOverlayButton;
 
 - (IBAction)globePressed:(id)sender {
 	
@@ -32,6 +32,9 @@
 	self.contentBackground.alpha = 0;
 	self.contentScroller.hidden = NO;
 	self.contentScroller.alpha = 0;
+	self.contentOverlayButton.hidden = NO;
+	self.contentOverlayButton.alpha = 0;
+
 	
 	[UIView beginAnimations:@"showContent" context:nil];
 	[UIView setAnimationDelegate:self];
@@ -40,6 +43,7 @@
 	
 	self.contentBackground.alpha = 1;
 	self.contentScroller.alpha = 1;
+	self.contentOverlayButton.alpha = 1;
 	
 	[UIView commitAnimations];
 	
@@ -64,6 +68,7 @@
 }
 
 - (void) contentShown {
+	
 	//add the first bit of content
 	[self showVideo]; 
 	
@@ -71,10 +76,17 @@
 	[[UIApplication sharedApplication] endIgnoringInteractionEvents];
 }
 
+- (IBAction)contentOverlayButtonPressed {
+	self.contentOverlayButton.hidden = YES;
+	self.contentScroller.hidden = YES;
+	self.contentBackground.hidden = YES;
+}
+
 #pragma mark cleanup
 - (void)dealloc {
 	[contentBackground release];
 	[contentScroller release];
+	[contentOverlayButton release];
     [super dealloc];
 }
 

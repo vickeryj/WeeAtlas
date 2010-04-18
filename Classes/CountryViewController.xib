@@ -98,7 +98,28 @@
 						</object>
 						<reference key="IBUINormalTitleShadowColor" ref="314692602"/>
 					</object>
-					<object class="IBUIImageView" id="529447084">
+					<object class="IBUIButton" id="307068236">
+						<reference key="NSNextResponder" ref="766721923"/>
+						<int key="NSvFlags">-2147483356</int>
+						<string key="NSFrameSize">{1024, 748}</string>
+						<reference key="NSSuperview" ref="766721923"/>
+						<object class="NSColor" key="IBUIBackgroundColor">
+							<int key="NSColorSpace">3</int>
+							<bytes key="NSWhite">MCAwLjc1AA</bytes>
+						</object>
+						<bool key="IBUIOpaque">NO</bool>
+						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
+						<int key="IBUIContentHorizontalAlignment">0</int>
+						<int key="IBUIContentVerticalAlignment">0</int>
+						<reference key="IBUIFont" ref="572861119"/>
+						<reference key="IBUIHighlightedTitleColor" ref="329480135"/>
+						<object class="NSColor" key="IBUINormalTitleColor">
+							<int key="NSColorSpace">1</int>
+							<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
+						</object>
+						<reference key="IBUINormalTitleShadowColor" ref="314692602"/>
+					</object>
+					<object class="IBUIImageView" id="871506586">
 						<reference key="NSNextResponder" ref="766721923"/>
 						<int key="NSvFlags">-2147483356</int>
 						<string key="NSFrame">{{187, 187}, {649, 374}}</string>
@@ -110,7 +131,7 @@
 							<string key="NSResourceName">video_container.png</string>
 						</object>
 					</object>
-					<object class="IBUIScrollView" id="9200908">
+					<object class="IBUIScrollView" id="889395300">
 						<reference key="NSNextResponder" ref="766721923"/>
 						<int key="NSvFlags">-2147483380</int>
 						<string key="NSFrame">{{196, 196}, {631, 355}}</string>
@@ -173,7 +194,7 @@
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">contentBackground</string>
 						<reference key="source" ref="841351856"/>
-						<reference key="destination" ref="529447084"/>
+						<reference key="destination" ref="871506586"/>
 					</object>
 					<int key="connectionID">12</int>
 				</object>
@@ -181,9 +202,26 @@
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">contentScroller</string>
 						<reference key="source" ref="841351856"/>
-						<reference key="destination" ref="9200908"/>
+						<reference key="destination" ref="889395300"/>
 					</object>
 					<int key="connectionID">13</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">contentOverlayButtonPressed</string>
+						<reference key="source" ref="307068236"/>
+						<reference key="destination" ref="841351856"/>
+						<int key="IBEventType">7</int>
+					</object>
+					<int key="connectionID">16</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">contentOverlayButton</string>
+						<reference key="source" ref="841351856"/>
+						<reference key="destination" ref="307068236"/>
+					</object>
+					<int key="connectionID">17</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -214,8 +252,9 @@
 							<reference ref="766144627"/>
 							<reference ref="70448620"/>
 							<reference ref="458331789"/>
-							<reference ref="529447084"/>
-							<reference ref="9200908"/>
+							<reference ref="871506586"/>
+							<reference ref="889395300"/>
+							<reference ref="307068236"/>
 						</object>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -238,15 +277,21 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">10</int>
-						<reference key="object" ref="529447084"/>
+						<reference key="object" ref="871506586"/>
 						<reference key="parent" ref="766721923"/>
 						<string key="objectName">contentBackground</string>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">11</int>
-						<reference key="object" ref="9200908"/>
+						<reference key="object" ref="889395300"/>
 						<reference key="parent" ref="766721923"/>
 						<string key="objectName">contentScroller</string>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">15</int>
+						<reference key="object" ref="307068236"/>
+						<reference key="parent" ref="766721923"/>
+						<string key="objectName">contentOverlayButton</string>
 					</object>
 				</object>
 			</object>
@@ -258,6 +303,7 @@
 					<string>-2.CustomClassName</string>
 					<string>10.IBPluginDependency</string>
 					<string>11.IBPluginDependency</string>
+					<string>15.IBPluginDependency</string>
 					<string>2.IBEditorWindowLastContentRect</string>
 					<string>2.IBPluginDependency</string>
 					<string>5.IBPluginDependency</string>
@@ -268,6 +314,7 @@
 					<bool key="EncodedWithXMLCoder">YES</bool>
 					<string>CountryViewController</string>
 					<string>UIResponder</string>
+					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>{{241, 51}, {1039, 705}}</string>
@@ -293,7 +340,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">13</int>
+			<int key="maxID">17</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -306,10 +353,12 @@
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>animalsButtonPressed</string>
+							<string>contentOverlayButtonPressed</string>
 							<string>globePressed:</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>id</string>
 							<string>id</string>
 							<string>id</string>
 						</object>
@@ -319,11 +368,13 @@
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>contentBackground</string>
+							<string>contentOverlayButton</string>
 							<string>contentScroller</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>UIView</string>
+							<string>UIButton</string>
 							<string>UIScrollView</string>
 						</object>
 					</object>
