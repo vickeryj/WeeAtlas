@@ -13,7 +13,7 @@
 @implementation WeeAtlasViewController
 
 @synthesize brazilButton, countryVC, splashView, mapView, countryView, countryButtonImage;
-@synthesize countryControllerDelegate, backgroundView;
+@synthesize countryControllerDelegate, backgroundView, mapFrame;
 
 - (IBAction) countryPressed {
 	NSNumber *countryTag = [NSNumber numberWithInt:brazilButton.tag];
@@ -26,6 +26,7 @@
 	CGRect mapRect = self.mapView.frame;
 	self.brazilButton.hidden = YES;
 	self.countryButtonImage.hidden = NO;
+	self.mapFrame.hidden = YES;
 
 	[UIView beginAnimations:@"shrinkMapGrowCountry" context:nil];
 	[UIView setAnimationDuration:3];
@@ -75,6 +76,7 @@
 	
 - (void) mapDidFinishGrowing {
 	self.brazilButton.hidden = NO;
+	self.mapFrame.hidden = NO;
 	[self.countryControllerDelegate controllerDidFinishReturnToMapAnimation:self];
 }
 
@@ -99,11 +101,14 @@
 	self.mapView.alpha = 0;
 	self.brazilButton.hidden = NO;
 	self.brazilButton.alpha = 0;
+	self.mapFrame.hidden = NO;
+	self.mapFrame.alpha = 0;
 	[UIView beginAnimations:@"crossFadeSplashToMap" context:nil];
 	[UIView setAnimationDuration:1];
 	self.splashView.alpha = 0;
 	self.mapView.alpha = 1;
 	self.brazilButton.alpha = 1;
+	self.mapFrame.alpha = 1;
 	[UIView commitAnimations];
 }
 
@@ -121,6 +126,7 @@
 	[countryView release];
 	[countryButtonImage release];
 	[backgroundView release];
+	[mapFrame release];
     [super dealloc];
 }
 

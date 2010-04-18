@@ -78,6 +78,18 @@
 							<string key="NSResourceName">world_brasil_cut_out.png</string>
 						</object>
 					</object>
+					<object class="IBUIImageView" id="944736227">
+						<reference key="NSNextResponder" ref="766721923"/>
+						<int key="NSvFlags">-2147483356</int>
+						<string key="NSFrameSize">{1024, 748}</string>
+						<reference key="NSSuperview" ref="766721923"/>
+						<bool key="IBUIUserInteractionEnabled">NO</bool>
+						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
+						<object class="NSCustomResource" key="IBUIImage">
+							<string key="NSClassName">NSImage</string>
+							<string key="NSResourceName">globe_background.png</string>
+						</object>
+					</object>
 					<object class="IBUIImageView" id="571329325">
 						<reference key="NSNextResponder" ref="766721923"/>
 						<int key="NSvFlags">-2147483356</int>
@@ -204,6 +216,14 @@
 					</object>
 					<int key="connectionID">26</int>
 				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">mapFrame</string>
+						<reference key="source" ref="841351856"/>
+						<reference key="destination" ref="944736227"/>
+					</object>
+					<int key="connectionID">28</int>
+				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
 				<object class="NSArray" key="orderedObjects">
@@ -235,6 +255,7 @@
 							<reference ref="401016365"/>
 							<reference ref="571329325"/>
 							<reference ref="128852654"/>
+							<reference ref="944736227"/>
 						</object>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -264,6 +285,11 @@
 						<reference key="parent" ref="766721923"/>
 						<string key="objectName">backgroundView</string>
 					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">27</int>
+						<reference key="object" ref="944736227"/>
+						<reference key="parent" ref="766721923"/>
+					</object>
 				</object>
 			</object>
 			<object class="NSMutableDictionary" key="flattenedProperties">
@@ -278,6 +304,7 @@
 					<string>2.IBPluginDependency</string>
 					<string>23.IBPluginDependency</string>
 					<string>25.IBPluginDependency</string>
+					<string>27.IBPluginDependency</string>
 					<string>5.CustomClassName</string>
 					<string>5.IBPluginDependency</string>
 				</object>
@@ -288,6 +315,7 @@
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>{{109, 51}, {1039, 705}}</string>
+					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
@@ -311,7 +339,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">26</int>
+			<int key="maxID">28</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -340,6 +368,7 @@
 							<string>countryButtonImage</string>
 							<string>countryControllerDelegate</string>
 							<string>countryView</string>
+							<string>mapFrame</string>
 							<string>mapView</string>
 							<string>splashView</string>
 						</object>
@@ -349,6 +378,7 @@
 							<string>AtlasControl</string>
 							<string>UIView</string>
 							<string>id</string>
+							<string>UIView</string>
 							<string>UIView</string>
 							<string>UIView</string>
 							<string>UIView</string>
@@ -613,6 +643,7 @@
 				<string>Default-Landscape.png</string>
 				<string>brasil_with_shaddow.png</string>
 				<string>brasil_with_shaddow_pressed.png</string>
+				<string>globe_background.png</string>
 				<string>world_brasil_cut_out.png</string>
 			</object>
 			<object class="NSMutableArray" key="dict.values">
@@ -620,6 +651,7 @@
 				<string>{1024, 748}</string>
 				<string>{217, 296}</string>
 				<string>{217, 296}</string>
+				<string>{1024, 748}</string>
 				<string>{1024, 748}</string>
 			</object>
 		</object>

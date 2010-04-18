@@ -22,6 +22,7 @@
 		35A2DDE7117B678F008A77DF /* brasil_extra_clean.png in Resources */ = {isa = PBXBuildFile; fileRef = 35A2DDE6117B678F008A77DF /* brasil_extra_clean.png */; };
 		35A2DDF5117B6EC6008A77DF /* reel.png in Resources */ = {isa = PBXBuildFile; fileRef = 35A2DDF4117B6EC6008A77DF /* reel.png */; };
 		35A2DE2C117B79D4008A77DF /* world_brasil_cut_out.png in Resources */ = {isa = PBXBuildFile; fileRef = 35A2DE2B117B79D4008A77DF /* world_brasil_cut_out.png */; };
+		35A2DE35117B7BAC008A77DF /* globe_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 35A2DE34117B7BAC008A77DF /* globe_background.png */; };
 		35F4C2D7117A4448009823B1 /* CountryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F4C2D5117A4448009823B1 /* CountryViewController.m */; };
 		35F4C2D8117A4448009823B1 /* CountryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35F4C2D6117A4448009823B1 /* CountryViewController.xib */; };
 		35F4C39F117A5C33009823B1 /* main.png in Resources */ = {isa = PBXBuildFile; fileRef = 35F4C39D117A5C33009823B1 /* main.png */; };
@@ -63,6 +64,7 @@
 		35A2DDE6117B678F008A77DF /* brasil_extra_clean.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = brasil_extra_clean.png; path = Images/brasil_extra_clean.png; sourceTree = "<group>"; };
 		35A2DDF4117B6EC6008A77DF /* reel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = reel.png; path = Images/reel.png; sourceTree = "<group>"; };
 		35A2DE2B117B79D4008A77DF /* world_brasil_cut_out.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = world_brasil_cut_out.png; path = Images/world_brasil_cut_out.png; sourceTree = "<group>"; };
+		35A2DE34117B7BAC008A77DF /* globe_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = globe_background.png; path = Images/globe_background.png; sourceTree = "<group>"; };
 		35F4C2D4117A4448009823B1 /* CountryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountryViewController.h; sourceTree = "<group>"; };
 		35F4C2D5117A4448009823B1 /* CountryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountryViewController.m; sourceTree = "<group>"; };
 		35F4C2D6117A4448009823B1 /* CountryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = CountryViewController.xib; path = Classes/CountryViewController.xib; sourceTree = "<group>"; };
@@ -208,6 +210,7 @@
 		A0E5C696117A3CD700E3957C /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				35A2DE34117B7BAC008A77DF /* globe_background.png */,
 				35A2DE2B117B79D4008A77DF /* world_brasil_cut_out.png */,
 				35A2DDF4117B6EC6008A77DF /* reel.png */,
 				35A2DDE6117B678F008A77DF /* brasil_extra_clean.png */,
@@ -291,6 +294,7 @@
 				35A2DDE7117B678F008A77DF /* brasil_extra_clean.png in Resources */,
 				35A2DDF5117B6EC6008A77DF /* reel.png in Resources */,
 				35A2DE2C117B79D4008A77DF /* world_brasil_cut_out.png in Resources */,
+				35A2DE35117B7BAC008A77DF /* globe_background.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
