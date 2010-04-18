@@ -80,7 +80,7 @@
 							<int key="NSColorSpace">3</int>
 							<bytes key="NSWhite">MC41AA</bytes>
 						</object>
-						<object class="NSCustomResource" key="IBUINormalImage" id="771276288">
+						<object class="NSCustomResource" key="IBUINormalImage">
 							<string key="NSClassName">NSImage</string>
 							<string key="NSResourceName">globe.png</string>
 						</object>
@@ -158,7 +158,10 @@
 						<reference key="NSSuperview" ref="766721923"/>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-						<reference key="IBUIImage" ref="771276288"/>
+						<object class="NSCustomResource" key="IBUIImage">
+							<string key="NSClassName">NSImage</string>
+							<string key="NSResourceName">reel_selected_effect.png</string>
+						</object>
 					</object>
 					<object class="IBUIButton" id="966966273">
 						<reference key="NSNextResponder" ref="766721923"/>
@@ -492,7 +495,7 @@
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-					<string>{{241, 51}, {1039, 705}}</string>
+					<string>{{241, 48}, {1039, 708}}</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
@@ -837,6 +840,7 @@
 				<string>capoeira.png</string>
 				<string>globe.png</string>
 				<string>reel.png</string>
+				<string>reel_selected_effect.png</string>
 				<string>samba.png</string>
 				<string>video_container.png</string>
 			</object>
@@ -847,6 +851,7 @@
 				<string>{227, 222}</string>
 				<string>{93, 88}</string>
 				<string>{629, 100}</string>
+				<string>{148, 59}</string>
 				<string>{227, 289}</string>
 				<string>{649, 374}</string>
 			</object>
