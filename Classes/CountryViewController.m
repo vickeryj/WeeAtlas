@@ -11,7 +11,7 @@
 
 @implementation CountryViewController
 
-@synthesize contentBackground, contentScroller, contentOverlayButton;
+@synthesize contentBackground, contentScroller, contentOverlayButton, contentStripButton;
 
 - (IBAction)globePressed:(id)sender {
 	
@@ -34,6 +34,8 @@
 	self.contentScroller.alpha = 0;
 	self.contentOverlayButton.hidden = NO;
 	self.contentOverlayButton.alpha = 0;
+	self.contentStripButton.hidden = NO;
+	self.contentStripButton.alpha = 0;
 
 	
 	[UIView beginAnimations:@"showContent" context:nil];
@@ -44,6 +46,7 @@
 	self.contentBackground.alpha = 1;
 	self.contentScroller.alpha = 1;
 	self.contentOverlayButton.alpha = 1;
+	self.contentStripButton.alpha = 1;
 	
 	[UIView commitAnimations];
 	
@@ -95,11 +98,16 @@
 	self.contentBackground.hidden = YES;
 }
 
+- (IBAction)contentStripButtonPressed {
+	
+}
+
 #pragma mark cleanup
 - (void)dealloc {
 	[contentBackground release];
 	[contentScroller release];
 	[contentOverlayButton release];
+	[contentStripButton release];
     [super dealloc];
 }
 
