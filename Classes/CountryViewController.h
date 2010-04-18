@@ -18,12 +18,20 @@
 	UIWebView *webContent;
 	int currentPage;
 	BOOL clipPlaying;
+	
+	UIButton *animalsButton;
+	UIButton *sambaButton;
+	UIButton *capoeiraButton;
 }
 
 @property(nonatomic, retain) IBOutlet UIView *contentBackground;
 @property(nonatomic, retain) IBOutlet UIScrollView *contentScroller;
 @property(nonatomic, retain) IBOutlet UIButton *contentOverlayButton;
 @property(nonatomic, retain) IBOutlet UIButton *contentStripButton;
+
+@property(nonatomic, retain) IBOutlet UIButton *animalsButton;
+@property(nonatomic, retain) IBOutlet UIButton *sambaButton;
+@property(nonatomic, retain) IBOutlet UIButton *capoeiraButton;
 
 - (IBAction)globePressed:(id)sender;
 - (IBAction)animalsButtonPressed;
