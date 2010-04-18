@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>BrazilSoundType</key>
-	<string>mp3</string>
+	<string>aif</string>
 	<key>BrazilSound</key>
 	<string>forvo_en_254088</string>
 	<key>0</key>

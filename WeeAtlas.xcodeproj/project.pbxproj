@@ -18,9 +18,16 @@
 		35F4C2D7117A4448009823B1 /* CountryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F4C2D5117A4448009823B1 /* CountryViewController.m */; };
 		35F4C2D8117A4448009823B1 /* CountryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35F4C2D6117A4448009823B1 /* CountryViewController.xib */; };
 		35F4C39F117A5C33009823B1 /* main.png in Resources */ = {isa = PBXBuildFile; fileRef = 35F4C39D117A5C33009823B1 /* main.png */; };
+		35F4C576117A83DB009823B1 /* reel.png in Resources */ = {isa = PBXBuildFile; fileRef = 35F4C571117A83DB009823B1 /* reel.png */; };
+		35F4C589117A8429009823B1 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 35F4C588117A8429009823B1 /* Icon.png */; };
+		35F4C59F117A86CD009823B1 /* brasil_with_shaddow_pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 35F4C59A117A86CD009823B1 /* brasil_with_shaddow_pressed.png */; };
+		35F4C5A0117A86CD009823B1 /* brasil_with_shaddow.png in Resources */ = {isa = PBXBuildFile; fileRef = 35F4C59B117A86CD009823B1 /* brasil_with_shaddow.png */; };
+		35F4C5A1117A86CD009823B1 /* brasil.png in Resources */ = {isa = PBXBuildFile; fileRef = 35F4C59C117A86CD009823B1 /* brasil.png */; };
+		35F4C5A3117A86CD009823B1 /* video_container.png in Resources */ = {isa = PBXBuildFile; fileRef = 35F4C59E117A86CD009823B1 /* video_container.png */; };
+		35F4C5D0117AA406009823B1 /* forvo_en_254088.aif in Resources */ = {isa = PBXBuildFile; fileRef = 35F4C5CF117AA406009823B1 /* forvo_en_254088.aif */; };
+		35F4C6DD117B1A39009823B1 /* youtube_embed.html in Resources */ = {isa = PBXBuildFile; fileRef = 35F4C6DC117B1A39009823B1 /* youtube_embed.html */; };
 		A0DBDBC0117A7281009DD2AD /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0DBDBBF117A7281009DD2AD /* AudioToolbox.framework */; };
 		A0DBDBE0117A73CD009DD2AD /* CountryProperties.plist in Resources */ = {isa = PBXBuildFile; fileRef = A0DBDBDF117A73CD009DD2AD /* CountryProperties.plist */; };
-		A0DBDBEC117A78D2009DD2AD /* forvo_en_254088.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A0DBDBEB117A78D2009DD2AD /* forvo_en_254088.mp3 */; };
 		A0E5C67B117A355100E3957C /* AtlasControl.m in Sources */ = {isa = PBXBuildFile; fileRef = A0E5C67A117A355100E3957C /* AtlasControl.m */; };
 		A0E5C686117A3AD700E3957C /* QuartzUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = A0E5C685117A3AD700E3957C /* QuartzUtils.m */; };
 		A0E5C68A117A3AF800E3957C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0E5C689117A3AF800E3957C /* QuartzCore.framework */; };
@@ -46,10 +53,17 @@
 		35F4C2D5117A4448009823B1 /* CountryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountryViewController.m; sourceTree = "<group>"; };
 		35F4C2D6117A4448009823B1 /* CountryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = CountryViewController.xib; path = Classes/CountryViewController.xib; sourceTree = "<group>"; };
 		35F4C39D117A5C33009823B1 /* main.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = main.png; path = Images/main.png; sourceTree = "<group>"; };
+		35F4C571117A83DB009823B1 /* reel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reel.png; sourceTree = "<group>"; };
+		35F4C588117A8429009823B1 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		35F4C59A117A86CD009823B1 /* brasil_with_shaddow_pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = brasil_with_shaddow_pressed.png; path = Images/brasil_with_shaddow_pressed.png; sourceTree = "<group>"; };
+		35F4C59B117A86CD009823B1 /* brasil_with_shaddow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = brasil_with_shaddow.png; path = Images/brasil_with_shaddow.png; sourceTree = "<group>"; };
+		35F4C59C117A86CD009823B1 /* brasil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = brasil.png; path = Images/brasil.png; sourceTree = "<group>"; };
+		35F4C59E117A86CD009823B1 /* video_container.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = video_container.png; path = Images/video_container.png; sourceTree = "<group>"; };
+		35F4C5CF117AA406009823B1 /* forvo_en_254088.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = forvo_en_254088.aif; sourceTree = "<group>"; };
+		35F4C6DC117B1A39009823B1 /* youtube_embed.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = youtube_embed.html; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* WeeAtlas-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "WeeAtlas-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		A0DBDBBF117A7281009DD2AD /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		A0DBDBDF117A73CD009DD2AD /* CountryProperties.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CountryProperties.plist; sourceTree = "<group>"; };
-		A0DBDBEB117A78D2009DD2AD /* forvo_en_254088.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = forvo_en_254088.mp3; sourceTree = "<group>"; };
 		A0E5C679117A355100E3957C /* AtlasControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AtlasControl.h; sourceTree = "<group>"; };
 		A0E5C67A117A355100E3957C /* AtlasControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AtlasControl.m; sourceTree = "<group>"; };
 		A0E5C684117A3AD700E3957C /* QuartzUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuartzUtils.h; sourceTree = "<group>"; };
@@ -122,8 +136,9 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				A0DBDBEB117A78D2009DD2AD /* forvo_en_254088.mp3 */,
+				35F4C6DB117B1A1F009823B1 /* HTML */,
 				A0E5C696117A3CD700E3957C /* Images */,
+				35F4C5CF117AA406009823B1 /* forvo_en_254088.aif */,
 				35F4C2D6117A4448009823B1 /* CountryViewController.xib */,
 				A0E5C710117A58CD00E3957C /* RootView.xib */,
 				2899E5210DE3E06400AC0155 /* WeeAtlasViewController.xib */,
@@ -159,6 +174,14 @@
 			name = "View Controllers";
 			sourceTree = "<group>";
 		};
+		35F4C6DB117B1A1F009823B1 /* HTML */ = {
+			isa = PBXGroup;
+			children = (
+				35F4C6DC117B1A39009823B1 /* youtube_embed.html */,
+			);
+			name = HTML;
+			sourceTree = "<group>";
+		};
 		A0E5C670117A351B00E3957C /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -171,6 +194,12 @@
 		A0E5C696117A3CD700E3957C /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				35F4C59A117A86CD009823B1 /* brasil_with_shaddow_pressed.png */,
+				35F4C59B117A86CD009823B1 /* brasil_with_shaddow.png */,
+				35F4C59C117A86CD009823B1 /* brasil.png */,
+				35F4C59E117A86CD009823B1 /* video_container.png */,
+				35F4C588117A8429009823B1 /* Icon.png */,
+				35F4C571117A83DB009823B1 /* reel.png */,
 				A0E5C6D6117A4DEE00E3957C /* Default-Landscape.png */,
 				35F4C39D117A5C33009823B1 /* main.png */,
 			);
@@ -226,7 +255,14 @@
 				A0E5C711117A58CD00E3957C /* RootView.xib in Resources */,
 				35F4C39F117A5C33009823B1 /* main.png in Resources */,
 				A0DBDBE0117A73CD009DD2AD /* CountryProperties.plist in Resources */,
-				A0DBDBEC117A78D2009DD2AD /* forvo_en_254088.mp3 in Resources */,
+				35F4C576117A83DB009823B1 /* reel.png in Resources */,
+				35F4C589117A8429009823B1 /* Icon.png in Resources */,
+				35F4C59F117A86CD009823B1 /* brasil_with_shaddow_pressed.png in Resources */,
+				35F4C5A0117A86CD009823B1 /* brasil_with_shaddow.png in Resources */,
+				35F4C5A1117A86CD009823B1 /* brasil.png in Resources */,
+				35F4C5A3117A86CD009823B1 /* video_container.png in Resources */,
+				35F4C5D0117AA406009823B1 /* forvo_en_254088.aif in Resources */,
+				35F4C6DD117B1A39009823B1 /* youtube_embed.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

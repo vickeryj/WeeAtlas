@@ -11,50 +11,82 @@
 
 @implementation CountryViewController
 
-/*
- // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    if ((self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil])) {
-        // Custom initialization
-    }
-    return self;
-}
-*/
+@synthesize contentBackground, contentScroller, contentOverlayButton;
 
-/*
-// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
-- (void)viewDidLoad {
-    [super viewDidLoad];
-}
-*/
-
-- (void)globePressed:(id)sender {
+- (IBAction)globePressed:(id)sender {
+	
+	self.contentBackground.hidden = YES;
+	self.contentScroller.hidden = YES;
+	
 	NSNotification *notification = [NSNotification notificationWithName:@"GlobeSelected" object:nil userInfo:nil];
 	[[NSNotificationCenter defaultCenter] postNotification:notification];
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    // Overriden to allow any orientation.
-    return YES;
+
+- (IBAction) animalsButtonPressed {
+
+	// don't allow the user to do anything while we are animating
+	[[UIApplication sharedApplication] beginIgnoringInteractionEvents];
+
+	self.contentBackground.hidden = NO;
+	self.contentBackground.alpha = 0;
+	self.contentScroller.hidden = NO;
+	self.contentScroller.alpha = 0;
+	self.contentOverlayButton.hidden = NO;
+	self.contentOverlayButton.alpha = 0;
+
+	
+	[UIView beginAnimations:@"showContent" context:nil];
+	[UIView setAnimationDelegate:self];
+	[UIView setAnimationDidStopSelector:@selector(contentShown)];
+	[UIView setAnimationDuration:1];
+	
+	self.contentBackground.alpha = 1;
+	self.contentScroller.alpha = 1;
+	self.contentOverlayButton.alpha = 1;
+	
+	[UIView commitAnimations];
+	
 }
 
-
-- (void)didReceiveMemoryWarning {
-    // Releases the view if it doesn't have a superview.
-    [super didReceiveMemoryWarning];
-    
-    // Release any cached data, images, etc that aren't in use.
+- (void) showVideo {
+	//load up an embedded youtube video
+	UIWebView *webContent = [[[UIWebView alloc] initWithFrame:self.contentScroller.bounds] autorelease];
+	[self.contentScroller addSubview:webContent];
+	NSString *movieURL = @"http://www.youtube.com/v/7WbrzlTnEQ4&hl=en_US&fs=1&";
+	
+	NSString *youtubeTemplate = [NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"youtube_embed" 
+																								   ofType:@"html"]
+														  encoding:NSUTF8StringEncoding
+															 error:nil];
+	NSString *youtubeContent = [NSString stringWithFormat:youtubeTemplate,
+								[NSString stringWithFormat:@"%f", self.contentScroller.frame.size.width],
+								[NSString stringWithFormat:@"%f", self.contentScroller.frame.size.height],
+								movieURL, movieURL];
+	
+	[webContent loadHTMLString:youtubeContent baseURL:nil];	
 }
 
-
-- (void)viewDidUnload {
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
+- (void) contentShown {
+	
+	//add the first bit of content
+	[self showVideo]; 
+	
+	// restore user interaction
+	[[UIApplication sharedApplication] endIgnoringInteractionEvents];
 }
 
+- (IBAction)contentOverlayButtonPressed {
+	self.contentOverlayButton.hidden = YES;
+	self.contentScroller.hidden = YES;
+	self.contentBackground.hidden = YES;
+}
 
+#pragma mark cleanup
 - (void)dealloc {
+	[contentBackground release];
+	[contentScroller release];
+	[contentOverlayButton release];
     [super dealloc];
 }
 

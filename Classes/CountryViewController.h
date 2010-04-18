@@ -11,6 +11,18 @@
 
 @interface CountryViewController : UIViewController {
 
+	UIView *contentBackground;
+	UIScrollView *contentScroller;
+	UIButton *contentOverlayButton;
+	
 }
+
+@property(nonatomic, retain) IBOutlet UIView *contentBackground;
+@property(nonatomic, retain) IBOutlet UIScrollView *contentScroller;
+@property(nonatomic, retain) IBOutlet UIButton *contentOverlayButton;
+
+- (IBAction)globePressed:(id)sender;
+- (IBAction)animalsButtonPressed;
+- (IBAction)contentOverlayButtonPressed;
 
 @end

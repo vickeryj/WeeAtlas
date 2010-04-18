@@ -8,12 +8,21 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol CountryControllerDelegateProtocol
+	
+- (void)controllerDidFinishSelectionAnimation:(UIViewController *)countryController;
+- (void)controllerDidFinishReturnToMapAnimation:(UIViewController *)countryController;
+
+@end
+
 @class WeeAtlasViewController,CountryViewController;
 
-@interface RootViewController : UIViewController {
+@interface RootViewController : UIViewController <CountryControllerDelegateProtocol> {
 	WeeAtlasViewController *weeAtlasViewController;
 	CountryViewController *countryViewController;
 	NSNumber *currentCountry;
 }
+
+@property(nonatomic, retain) CountryViewController *countryViewController;
 
 @end
