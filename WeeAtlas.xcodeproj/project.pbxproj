@@ -15,6 +15,11 @@
 		2899E5220DE3E06400AC0155 /* WeeAtlasViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* WeeAtlasViewController.xib */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		28D7ACF80DDB3853001CB0EB /* WeeAtlasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* WeeAtlasViewController.m */; };
+		35A2DDE2117B6597008A77DF /* animals.png in Resources */ = {isa = PBXBuildFile; fileRef = 35A2DDDE117B6597008A77DF /* animals.png */; };
+		35A2DDE3117B6597008A77DF /* capoeira.png in Resources */ = {isa = PBXBuildFile; fileRef = 35A2DDDF117B6597008A77DF /* capoeira.png */; };
+		35A2DDE4117B6597008A77DF /* globe.png in Resources */ = {isa = PBXBuildFile; fileRef = 35A2DDE0117B6597008A77DF /* globe.png */; };
+		35A2DDE5117B6597008A77DF /* samba.png in Resources */ = {isa = PBXBuildFile; fileRef = 35A2DDE1117B6597008A77DF /* samba.png */; };
+		35A2DDE7117B678F008A77DF /* brasil_extra_clean.png in Resources */ = {isa = PBXBuildFile; fileRef = 35A2DDE6117B678F008A77DF /* brasil_extra_clean.png */; };
 		35F4C2D7117A4448009823B1 /* CountryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F4C2D5117A4448009823B1 /* CountryViewController.m */; };
 		35F4C2D8117A4448009823B1 /* CountryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35F4C2D6117A4448009823B1 /* CountryViewController.xib */; };
 		35F4C39F117A5C33009823B1 /* main.png in Resources */ = {isa = PBXBuildFile; fileRef = 35F4C39D117A5C33009823B1 /* main.png */; };
@@ -50,6 +55,11 @@
 		28D7ACF70DDB3853001CB0EB /* WeeAtlasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeeAtlasViewController.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* WeeAtlas_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeeAtlas_Prefix.pch; sourceTree = "<group>"; };
+		35A2DDDE117B6597008A77DF /* animals.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = animals.png; path = Images/animals.png; sourceTree = "<group>"; };
+		35A2DDDF117B6597008A77DF /* capoeira.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = capoeira.png; path = Images/capoeira.png; sourceTree = "<group>"; };
+		35A2DDE0117B6597008A77DF /* globe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = globe.png; path = Images/globe.png; sourceTree = "<group>"; };
+		35A2DDE1117B6597008A77DF /* samba.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = samba.png; path = Images/samba.png; sourceTree = "<group>"; };
+		35A2DDE6117B678F008A77DF /* brasil_extra_clean.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = brasil_extra_clean.png; path = Images/brasil_extra_clean.png; sourceTree = "<group>"; };
 		35F4C2D4117A4448009823B1 /* CountryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountryViewController.h; sourceTree = "<group>"; };
 		35F4C2D5117A4448009823B1 /* CountryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountryViewController.m; sourceTree = "<group>"; };
 		35F4C2D6117A4448009823B1 /* CountryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = CountryViewController.xib; path = Classes/CountryViewController.xib; sourceTree = "<group>"; };
@@ -196,6 +206,11 @@
 		A0E5C696117A3CD700E3957C /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				35A2DDE6117B678F008A77DF /* brasil_extra_clean.png */,
+				35A2DDDE117B6597008A77DF /* animals.png */,
+				35A2DDDF117B6597008A77DF /* capoeira.png */,
+				35A2DDE0117B6597008A77DF /* globe.png */,
+				35A2DDE1117B6597008A77DF /* samba.png */,
 				35F4C717117B5528009823B1 /* toucan.jpg */,
 				35F4C59A117A86CD009823B1 /* brasil_with_shaddow_pressed.png */,
 				35F4C59B117A86CD009823B1 /* brasil_with_shaddow.png */,
@@ -267,6 +282,11 @@
 				35F4C5D0117AA406009823B1 /* forvo_en_254088.aif in Resources */,
 				35F4C6DD117B1A39009823B1 /* youtube_embed.html in Resources */,
 				35F4C718117B5528009823B1 /* toucan.jpg in Resources */,
+				35A2DDE2117B6597008A77DF /* animals.png in Resources */,
+				35A2DDE3117B6597008A77DF /* capoeira.png in Resources */,
+				35A2DDE4117B6597008A77DF /* globe.png in Resources */,
+				35A2DDE5117B6597008A77DF /* samba.png in Resources */,
+				35A2DDE7117B678F008A77DF /* brasil_extra_clean.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
