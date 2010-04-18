@@ -28,6 +28,10 @@
 }
 */
 
+- (void)globePressed:(id)sender {
+	NSNotification *notification = [NSNotification notificationWithName:@"GlobeSelected" object:nil userInfo:nil];
+	[[NSNotificationCenter defaultCenter] postNotification:notification];
+}
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
     // Overriden to allow any orientation.

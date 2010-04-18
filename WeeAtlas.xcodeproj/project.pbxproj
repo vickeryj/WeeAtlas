@@ -18,6 +18,9 @@
 		35F4C2D7117A4448009823B1 /* CountryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F4C2D5117A4448009823B1 /* CountryViewController.m */; };
 		35F4C2D8117A4448009823B1 /* CountryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35F4C2D6117A4448009823B1 /* CountryViewController.xib */; };
 		35F4C39F117A5C33009823B1 /* main.png in Resources */ = {isa = PBXBuildFile; fileRef = 35F4C39D117A5C33009823B1 /* main.png */; };
+		A0DBDBC0117A7281009DD2AD /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0DBDBBF117A7281009DD2AD /* AudioToolbox.framework */; };
+		A0DBDBE0117A73CD009DD2AD /* CountryProperties.plist in Resources */ = {isa = PBXBuildFile; fileRef = A0DBDBDF117A73CD009DD2AD /* CountryProperties.plist */; };
+		A0DBDBEC117A78D2009DD2AD /* forvo_en_254088.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A0DBDBEB117A78D2009DD2AD /* forvo_en_254088.mp3 */; };
 		A0E5C67B117A355100E3957C /* AtlasControl.m in Sources */ = {isa = PBXBuildFile; fileRef = A0E5C67A117A355100E3957C /* AtlasControl.m */; };
 		A0E5C686117A3AD700E3957C /* QuartzUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = A0E5C685117A3AD700E3957C /* QuartzUtils.m */; };
 		A0E5C68A117A3AF800E3957C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0E5C689117A3AF800E3957C /* QuartzCore.framework */; };
@@ -44,6 +47,9 @@
 		35F4C2D6117A4448009823B1 /* CountryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = CountryViewController.xib; path = Classes/CountryViewController.xib; sourceTree = "<group>"; };
 		35F4C39D117A5C33009823B1 /* main.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = main.png; path = Images/main.png; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* WeeAtlas-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "WeeAtlas-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		A0DBDBBF117A7281009DD2AD /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		A0DBDBDF117A73CD009DD2AD /* CountryProperties.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CountryProperties.plist; sourceTree = "<group>"; };
+		A0DBDBEB117A78D2009DD2AD /* forvo_en_254088.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = forvo_en_254088.mp3; sourceTree = "<group>"; };
 		A0E5C679117A355100E3957C /* AtlasControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AtlasControl.h; sourceTree = "<group>"; };
 		A0E5C67A117A355100E3957C /* AtlasControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AtlasControl.m; sourceTree = "<group>"; };
 		A0E5C684117A3AD700E3957C /* QuartzUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuartzUtils.h; sourceTree = "<group>"; };
@@ -64,6 +70,7 @@
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
 				A0E5C68A117A3AF800E3957C /* QuartzCore.framework in Frameworks */,
+				A0DBDBC0117A7281009DD2AD /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,12 +122,14 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A0DBDBEB117A78D2009DD2AD /* forvo_en_254088.mp3 */,
 				A0E5C696117A3CD700E3957C /* Images */,
 				35F4C2D6117A4448009823B1 /* CountryViewController.xib */,
 				A0E5C710117A58CD00E3957C /* RootView.xib */,
 				2899E5210DE3E06400AC0155 /* WeeAtlasViewController.xib */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* WeeAtlas-Info.plist */,
+				A0DBDBDF117A73CD009DD2AD /* CountryProperties.plist */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -128,6 +137,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A0DBDBBF117A7281009DD2AD /* AudioToolbox.framework */,
 				A0E5C689117A3AF800E3957C /* QuartzCore.framework */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
@@ -215,6 +225,8 @@
 				A0E5C6D7117A4DEE00E3957C /* Default-Landscape.png in Resources */,
 				A0E5C711117A58CD00E3957C /* RootView.xib in Resources */,
 				35F4C39F117A5C33009823B1 /* main.png in Resources */,
+				A0DBDBE0117A73CD009DD2AD /* CountryProperties.plist in Resources */,
+				A0DBDBEC117A78D2009DD2AD /* forvo_en_254088.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

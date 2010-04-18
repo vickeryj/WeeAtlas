@@ -13,9 +13,7 @@
 @interface RootViewController : UIViewController {
 	WeeAtlasViewController *weeAtlasViewController;
 	CountryViewController *countryViewController;
-	UIView *splashView;
+	NSNumber *currentCountry;
 }
-
-@property(nonatomic, retain) IBOutlet UIView *splashView;
 
 @end
