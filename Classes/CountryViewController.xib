@@ -127,6 +127,7 @@
 						<bool key="IBUIMultipleTouchEnabled">YES</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 						<bool key="IBUIPagingEnabled">YES</bool>
+						<bool key="IBUIShowsVerticalScrollIndicator">NO</bool>
 						<bool key="IBUIBouncesZoom">NO</bool>
 					</object>
 					<object class="IBUIButton" id="202119393">
