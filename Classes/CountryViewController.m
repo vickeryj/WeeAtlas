@@ -8,6 +8,13 @@
 
 #import "CountryViewController.h"
 
+@interface CountryViewController()
+
+- (void) stopClip;
+- (void) playClip;
+
+@end
+
 
 @implementation CountryViewController
 
@@ -54,8 +61,13 @@
 	webContent.scalesPageToFit = YES;
 	webContent.userInteractionEnabled = NO;
 	[self.contentScroller addSubview:webContent];
+	[self playClip];
+}
+
+- (void) playClip {
+	NSLog(@"playing clip");
+	clipPlaying = YES;
 	NSString *movieURL = @"http://www.youtube.com/v/7WbrzlTnEQ4&hl=en_US&fs=1&";
-	
 	NSString *youtubeTemplate = [NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"youtube_embed" 
 																								   ofType:@"html"]
 														  encoding:NSUTF8StringEncoding
@@ -64,12 +76,26 @@
 								[NSString stringWithFormat:@"%f", self.contentScroller.frame.size.width],
 								[NSString stringWithFormat:@"%f", self.contentScroller.frame.size.height],
 								movieURL, movieURL];
-	
-	[webContent loadHTMLString:youtubeContent baseURL:nil];	
+	[webContent loadHTMLString:youtubeContent baseURL:nil];
+}
+
+- (void) stopClip {
+	NSLog(@"stopping clip");
+	if(clipPlaying) {
+		[webContent loadHTMLString:@"" baseURL:nil];
+		clipPlaying = NO;
+	}
 }
 
 - (void)scrollViewDidScroll:(UIScrollView*)scrollView {
-	[webContent loadHTMLString:@"" baseURL:nil];	
+	[webContent loadHTMLString:@"" baseURL:nil];
+	CGFloat pageWidth = scrollView.frame.size.width;
+    int page = floor((scrollView.contentOffset.x - pageWidth / 2) / pageWidth) + 1;
+	if(page > 0) {
+		[self stopClip];
+	} else {
+		[self playClip];
+	}
 }
 
 - (void) contentShown {

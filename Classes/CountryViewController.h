@@ -15,6 +15,8 @@
 	UIScrollView *contentScroller;
 	UIButton *contentOverlayButton;
 	UIWebView *webContent;
+	int currentPage;
+	BOOL clipPlaying;
 }
 
 @property(nonatomic, retain) IBOutlet UIView *contentBackground;
