@@ -21,6 +21,7 @@
 	UIView *countryButtonImage;
 	UIView *backgroundView;
 	id<CountryControllerDelegateProtocol> countryControllerDelegate;
+	UIView *mapFrame;
 }
 
 @property(nonatomic, retain) IBOutlet AtlasControl *brazilButton;
@@ -30,6 +31,7 @@
 @property(nonatomic, retain) IBOutlet UIView *countryView;
 @property(nonatomic, retain) IBOutlet UIView *countryButtonImage;
 @property(nonatomic, retain) IBOutlet UIView *backgroundView;
+@property(nonatomic, retain) IBOutlet UIView *mapFrame;
 
 @property(nonatomic, assign) id<CountryControllerDelegateProtocol> countryControllerDelegate;
 
