@@ -95,11 +95,12 @@
 	}
 }
 
+#pragma mark UIScrollViewDelegate
 - (void)scrollViewDidScroll:(UIScrollView*)scrollView {
 	[webContent loadHTMLString:@"" baseURL:nil];
 	CGFloat pageWidth = scrollView.frame.size.width;
-    int page = floor((scrollView.contentOffset.x - pageWidth / 2) / pageWidth) + 1;
-	if(page > 0) {
+    currentPage = floor((scrollView.contentOffset.x - pageWidth / 2) / pageWidth) + 1;
+	if(currentPage > 0) {
 		[self stopClip];
 	} else {
 		[self playClip];
@@ -156,7 +157,9 @@
 }
 
 - (IBAction)contentStripButtonPressed {
-	
+	CGFloat pageWidth = self.contentScroller.frame.size.width;
+	[self.contentScroller scrollRectToVisible:CGRectMake(self.contentScroller.contentOffset.x, 0, pageWidth, 
+														 self.contentScroller.frame.size.height) animated:YES];
 }
 
 #pragma mark cleanup
