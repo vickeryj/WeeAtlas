@@ -129,10 +129,10 @@
 						<bool key="IBUIPagingEnabled">YES</bool>
 						<bool key="IBUIBouncesZoom">NO</bool>
 					</object>
-					<object class="IBUIButton" id="337241011">
+					<object class="IBUIButton" id="202119393">
 						<reference key="NSNextResponder" ref="766721923"/>
 						<int key="NSvFlags">-2147483356</int>
-						<string key="NSFrame">{{324, 621}, {377, 92}}</string>
+						<string key="NSFrame">{{198, 561}, {629, 89}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -150,7 +150,7 @@
 							<string key="NSResourceName">reel.png</string>
 						</object>
 					</object>
-					<object class="IBUIButton" id="814561534">
+					<object class="IBUIButton" id="966966273">
 						<reference key="NSNextResponder" ref="766721923"/>
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{111, 194}, {209, 275}}</string>
@@ -171,7 +171,7 @@
 							<string key="NSResourceName">animals.png</string>
 						</object>
 					</object>
-					<object class="IBUIButton" id="53924944">
+					<object class="IBUIButton" id="998803390">
 						<reference key="NSNextResponder" ref="766721923"/>
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{637, 20}, {227, 222}}</string>
@@ -192,7 +192,7 @@
 							<string key="NSResourceName">capoeira.png</string>
 						</object>
 					</object>
-					<object class="IBUIButton" id="274398316">
+					<object class="IBUIButton" id="256043337">
 						<reference key="NSNextResponder" ref="766721923"/>
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{733, 298}, {227, 289}}</string>
@@ -290,14 +290,14 @@
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">contentStripButton</string>
 						<reference key="source" ref="841351856"/>
-						<reference key="destination" ref="337241011"/>
+						<reference key="destination" ref="202119393"/>
 					</object>
 					<int key="connectionID">19</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
 						<string key="label">contentStripButtonPressed</string>
-						<reference key="source" ref="337241011"/>
+						<reference key="source" ref="202119393"/>
 						<reference key="destination" ref="841351856"/>
 						<int key="IBEventType">7</int>
 					</object>
@@ -306,7 +306,7 @@
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
 						<string key="label">animalsButtonPressed</string>
-						<reference key="source" ref="814561534"/>
+						<reference key="source" ref="966966273"/>
 						<reference key="destination" ref="841351856"/>
 						<int key="IBEventType">7</int>
 					</object>
@@ -343,10 +343,10 @@
 							<reference ref="663667859"/>
 							<reference ref="400883560"/>
 							<reference ref="386719702"/>
-							<reference ref="337241011"/>
-							<reference ref="814561534"/>
-							<reference ref="53924944"/>
-							<reference ref="274398316"/>
+							<reference ref="202119393"/>
+							<reference ref="966966273"/>
+							<reference ref="998803390"/>
+							<reference ref="256043337"/>
 						</object>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -384,25 +384,25 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">18</int>
-						<reference key="object" ref="337241011"/>
+						<reference key="object" ref="202119393"/>
 						<reference key="parent" ref="766721923"/>
 						<string key="objectName">contentStripButton</string>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">21</int>
-						<reference key="object" ref="814561534"/>
+						<reference key="object" ref="966966273"/>
 						<reference key="parent" ref="766721923"/>
 						<string key="objectName">animalsButton</string>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">23</int>
-						<reference key="object" ref="53924944"/>
+						<reference key="object" ref="998803390"/>
 						<reference key="parent" ref="766721923"/>
 						<string key="objectName">capoeiraButton</string>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">24</int>
-						<reference key="object" ref="274398316"/>
+						<reference key="object" ref="256043337"/>
 						<reference key="parent" ref="766721923"/>
 						<string key="objectName">sambaButton</string>
 					</object>
@@ -434,7 +434,7 @@
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-					<string>{{450, 6}, {1039, 705}}</string>
+					<string>{{155, 43}, {1039, 705}}</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
