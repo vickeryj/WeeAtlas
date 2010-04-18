@@ -97,18 +97,16 @@
 - (void) crossFadeSplashToMap {
 	self.mapView.hidden = NO;
 	self.mapView.alpha = 0;
+	self.brazilButton.hidden = NO;
+	self.brazilButton.alpha = 0;
 	[UIView beginAnimations:@"crossFadeSplashToMap" context:nil];
 	[UIView setAnimationDuration:1];
-	[UIView setAnimationDidStopSelector:@selector(showCountryButton)];
-	[UIView setAnimationDelegate:self];
 	self.splashView.alpha = 0;
 	self.mapView.alpha = 1;
+	self.brazilButton.alpha = 1;
 	[UIView commitAnimations];
 }
 
-- (void) showCountryButton {
-	self.brazilButton.hidden = NO;
-}
 
 // Override to allow orientations other than the default portrait orientation.
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {

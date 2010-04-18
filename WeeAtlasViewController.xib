@@ -75,7 +75,7 @@
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 						<object class="NSCustomResource" key="IBUIImage">
 							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">main.png</string>
+							<string key="NSResourceName">world_brasil_cut_out.png</string>
 						</object>
 					</object>
 					<object class="IBUIImageView" id="571329325">
@@ -613,7 +613,7 @@
 				<string>Default-Landscape.png</string>
 				<string>brasil_with_shaddow.png</string>
 				<string>brasil_with_shaddow_pressed.png</string>
-				<string>main.png</string>
+				<string>world_brasil_cut_out.png</string>
 			</object>
 			<object class="NSMutableArray" key="dict.values">
 				<bool key="EncodedWithXMLCoder">YES</bool>
