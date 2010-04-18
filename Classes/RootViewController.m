@@ -38,8 +38,9 @@
 	[weeAtlasViewController growSplash];
 }
 
-- (void)handleCountryNav:(NSNumber*)countryTag {
-	currentCountry = countryTag;
+- (void)handleCountryNav:(NSNotification*)countryNotification {
+	NSDictionary *params = [countryNotification userInfo];
+	currentCountry = [params valueForKey:@"countryTag"];
 	[self playCountryName];
 }
 
