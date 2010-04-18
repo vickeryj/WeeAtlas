@@ -69,6 +69,7 @@
 	webContent = [[UIWebView alloc] initWithFrame:self.contentScroller.bounds];
 	webContent.scalesPageToFit = NO;
 	webContent.userInteractionEnabled = NO;
+	webContent.delegate = self;
 	[self.contentScroller addSubview:webContent];
 	[self playClip];
 }
