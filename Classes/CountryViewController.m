@@ -20,7 +20,7 @@
 @implementation CountryViewController
 
 @synthesize contentBackground, contentScroller, contentOverlayButton, contentStripButton;
-@synthesize animalsButton, sambaButton, capoeiraButton;
+@synthesize animalsButton, sambaButton, capoeiraButton, selectedClipFrame;
 
 - (IBAction)globePressed:(id)sender {
 	
@@ -43,6 +43,8 @@
 	self.contentOverlayButton.alpha = 0;
 	self.contentStripButton.hidden = NO;
 	self.contentStripButton.alpha = 0;
+	self.selectedClipFrame.hidden = NO;
+	self.selectedClipFrame.alpha = 0;
 
 	
 	[UIView beginAnimations:@"showContent" context:nil];
@@ -54,10 +56,12 @@
 	self.contentScroller.alpha = 1;
 	self.contentOverlayButton.alpha = 1;
 	self.contentStripButton.alpha = 1;
+	self.selectedClipFrame.alpha = 1;
 	
 	self.animalsButton.alpha = 0;
 	self.sambaButton.alpha = 0;
 	self.capoeiraButton.alpha = 0;
+
 	
 	[UIView commitAnimations];
 	
@@ -131,12 +135,22 @@
 - (void)scrollViewDidScroll:(UIScrollView*)scrollView {
 	[webContent loadHTMLString:@"" baseURL:nil];
 	CGFloat pageWidth = scrollView.frame.size.width;
+	int oldPage = currentPage;
     currentPage = floor((scrollView.contentOffset.x - pageWidth / 2) / pageWidth) + 1;
 	if(currentPage != 1) {
 		[self stopClip];
 	} else if (currentPage == 1) {
 		[self playClip];
 	}
+	
+	if (oldPage != currentPage) {
+		[UIView beginAnimations:@"slide" context:nil];
+		CGRect selectedFrame = selectedClipFrame.frame;
+		selectedFrame.origin.x += selectedFrame.size.width;
+		selectedClipFrame.frame = selectedFrame;
+		[UIView commitAnimations];
+	}
+	
 }
 
 - (UIButton *)findButtonInView:(UIView *)view {
@@ -179,10 +193,12 @@
 	self.contentScroller.alpha = 0;
 	self.contentBackground.alpha = 0;
 	self.contentStripButton.alpha = 0;
+	self.selectedClipFrame.alpha = 0;
 	
 	self.animalsButton.alpha = 1;
 	self.sambaButton.alpha = 1;
 	self.capoeiraButton.alpha = 1;
+
 	
 	[UIView commitAnimations];
 }
@@ -205,6 +221,7 @@
 	[animalsButton release];
 	[sambaButton release];
 	[capoeiraButton release];
+	[selectedClipFrame release];
     [super dealloc];
 }
 
