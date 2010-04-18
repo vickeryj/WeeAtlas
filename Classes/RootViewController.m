@@ -20,6 +20,8 @@
 
 @implementation RootViewController
 
+@synthesize countryViewController;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
 	[[NSNotificationCenter defaultCenter] addObserver:self
@@ -31,6 +33,8 @@
 												 name:@"GlobeSelected" 
 											   object:nil];
 	weeAtlasViewController = [[WeeAtlasViewController alloc] init];
+	weeAtlasViewController.countryControllerDelegate = self;
+	self.countryViewController = [[[CountryViewController alloc] init] autorelease];
 	CGRect mapRect = weeAtlasViewController.view.frame;
 	mapRect.origin.y += 26;
 	weeAtlasViewController.view.frame = mapRect;
@@ -76,9 +80,31 @@
     return UIInterfaceOrientationIsLandscape(interfaceOrientation);
 }
 
+#pragma mark CountryControllerDelegate methods
+- (void)controllerDidFinishSelectionAnimation:(UIViewController *)countryController {
+	[self.view addSubview:self.countryViewController.view];
+	CGRect countryControllerRect = self.countryViewController.view.frame;
+	countryControllerRect.origin.y += 20;
+	self.countryViewController.view.frame = countryControllerRect;
+	self.countryViewController.view.alpha = 0;
+	[UIView beginAnimations:@"fadeInCountryView" context:nil];
+	[UIView setAnimationDelegate:self];
+	[UIView setAnimationDidStopSelector:@selector(countryViewControlleFadeInComplete)];
+	[UIView setAnimationDuration:2];
+	self.countryViewController.view.alpha = 1;
+	[UIView commitAnimations];
+
+}
+
+- (void)countryViewControlleFadeInComplete {
+	[weeAtlasViewController.view removeFromSuperview];
+}
+
+#pragma mark cleanup
 - (void)dealloc {
 	[currentCountry release];
 	[weeAtlasViewController release];
+	[countryViewController release];
     [super dealloc];
 }
 

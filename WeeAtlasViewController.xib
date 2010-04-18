@@ -42,6 +42,17 @@
 				<int key="NSvFlags">319</int>
 				<object class="NSMutableArray" key="NSSubviews">
 					<bool key="EncodedWithXMLCoder">YES</bool>
+					<object class="IBUIView" id="128852654">
+						<reference key="NSNextResponder" ref="766721923"/>
+						<int key="NSvFlags">292</int>
+						<string key="NSFrameSize">{1024, 748}</string>
+						<reference key="NSSuperview" ref="766721923"/>
+						<object class="NSColor" key="IBUIBackgroundColor">
+							<int key="NSColorSpace">2</int>
+							<bytes key="NSRGB">MC43MzcyNTQ5MTc2IDAuODg2Mjc0NTc2MiAwLjk3MjU0OTA4MDgAA</bytes>
+						</object>
+						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
+					</object>
 					<object class="IBUIImageView" id="877873601">
 						<reference key="NSNextResponder" ref="766721923"/>
 						<int key="NSvFlags">301</int>
@@ -52,18 +63,6 @@
 						<object class="NSCustomResource" key="IBUIImage">
 							<string key="NSClassName">NSImage</string>
 							<string key="NSResourceName">Default-Landscape.png</string>
-						</object>
-					</object>
-					<object class="IBUIImageView" id="446835651">
-						<reference key="NSNextResponder" ref="766721923"/>
-						<int key="NSvFlags">-2147483347</int>
-						<string key="NSFrameSize">{1024, 748}</string>
-						<reference key="NSSuperview" ref="766721923"/>
-						<bool key="IBUIUserInteractionEnabled">NO</bool>
-						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-						<object class="NSCustomResource" key="IBUIImage">
-							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">brasil.png</string>
 						</object>
 					</object>
 					<object class="IBUIImageView" id="436432331">
@@ -78,14 +77,14 @@
 							<string key="NSResourceName">main.png</string>
 						</object>
 					</object>
-					<object class="IBUIImageView" id="875189176">
+					<object class="IBUIImageView" id="571329325">
 						<reference key="NSNextResponder" ref="766721923"/>
 						<int key="NSvFlags">-2147483356</int>
 						<string key="NSFrame">{{180, 317}, {217, 296}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
-						<object class="NSCustomResource" key="IBUIImage" id="1036267042">
+						<object class="NSCustomResource" key="IBUIImage" id="618177874">
 							<string key="NSClassName">NSImage</string>
 							<string key="NSResourceName">brasil_with_shaddow.png</string>
 						</object>
@@ -116,22 +115,19 @@
 							<int key="NSColorSpace">3</int>
 							<bytes key="NSWhite">MC41AA</bytes>
 						</object>
-						<object class="NSCustomResource" key="IBUIHighlightedImage" id="489344083">
+						<object class="NSCustomResource" key="IBUIHighlightedImage" id="841253629">
 							<string key="NSClassName">NSImage</string>
 							<string key="NSResourceName">brasil_with_shaddow_pressed.png</string>
 						</object>
-						<reference key="IBUISelectedImage" ref="489344083"/>
-						<reference key="IBUINormalImage" ref="1036267042"/>
+						<reference key="IBUISelectedImage" ref="841253629"/>
+						<reference key="IBUINormalImage" ref="618177874"/>
 					</object>
 				</object>
 				<string key="NSFrameSize">{1024, 748}</string>
 				<reference key="NSSuperview"/>
 				<object class="NSColor" key="IBUIBackgroundColor">
-					<int key="NSColorSpace">3</int>
-					<bytes key="NSWhite">MQA</bytes>
-					<object class="NSColorSpace" key="NSCustomColorSpace">
-						<int key="NSID">2</int>
-					</object>
+					<int key="NSColorSpace">2</int>
+					<bytes key="NSRGB">MC43MTc2NDcwNzU3IDAuODY2NjY2NzM0MiAwLjk2MDc4NDM3NTcAA</bytes>
 				</object>
 				<bool key="IBUIAutoresizesSubviews">NO</bool>
 				<object class="IBUISimulatedStatusBarMetrics" key="IBUISimulatedStatusBarMetrics">
@@ -189,17 +185,9 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">countryView</string>
-						<reference key="source" ref="841351856"/>
-						<reference key="destination" ref="446835651"/>
-					</object>
-					<int key="connectionID">22</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">countryButtonImage</string>
 						<reference key="source" ref="841351856"/>
-						<reference key="destination" ref="875189176"/>
+						<reference key="destination" ref="571329325"/>
 					</object>
 					<int key="connectionID">24</int>
 				</object>
@@ -232,8 +220,8 @@
 							<reference ref="877873601"/>
 							<reference ref="436432331"/>
 							<reference ref="401016365"/>
-							<reference ref="446835651"/>
-							<reference ref="875189176"/>
+							<reference ref="571329325"/>
+							<reference ref="128852654"/>
 						</object>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -253,13 +241,13 @@
 						<reference key="parent" ref="766721923"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">21</int>
-						<reference key="object" ref="446835651"/>
+						<int key="objectID">23</int>
+						<reference key="object" ref="571329325"/>
 						<reference key="parent" ref="766721923"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">23</int>
-						<reference key="object" ref="875189176"/>
+						<int key="objectID">25</int>
+						<reference key="object" ref="128852654"/>
 						<reference key="parent" ref="766721923"/>
 					</object>
 				</object>
@@ -274,8 +262,8 @@
 					<string>19.IBPluginDependency</string>
 					<string>2.IBEditorWindowLastContentRect</string>
 					<string>2.IBPluginDependency</string>
-					<string>21.IBPluginDependency</string>
 					<string>23.IBPluginDependency</string>
+					<string>25.IBPluginDependency</string>
 					<string>5.CustomClassName</string>
 					<string>5.IBPluginDependency</string>
 				</object>
@@ -309,7 +297,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">24</int>
+			<int key="maxID">25</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -335,6 +323,7 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>brazilButton</string>
 							<string>countryButtonImage</string>
+							<string>countryControllerDelegate</string>
 							<string>countryView</string>
 							<string>mapView</string>
 							<string>splashView</string>
@@ -343,6 +332,7 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>AtlasControl</string>
 							<string>UIView</string>
+							<string>id</string>
 							<string>UIView</string>
 							<string>UIView</string>
 							<string>UIView</string>
@@ -605,14 +595,12 @@
 			<object class="NSArray" key="dict.sortedKeys">
 				<bool key="EncodedWithXMLCoder">YES</bool>
 				<string>Default-Landscape.png</string>
-				<string>brasil.png</string>
 				<string>brasil_with_shaddow.png</string>
 				<string>brasil_with_shaddow_pressed.png</string>
 				<string>main.png</string>
 			</object>
 			<object class="NSMutableArray" key="dict.values">
 				<bool key="EncodedWithXMLCoder">YES</bool>
-				<string>{1024, 748}</string>
 				<string>{1024, 748}</string>
 				<string>{217, 296}</string>
 				<string>{217, 296}</string>
