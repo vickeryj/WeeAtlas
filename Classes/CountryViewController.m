@@ -20,7 +20,7 @@
 @implementation CountryViewController
 
 @synthesize contentBackground, contentScroller, contentOverlayButton, contentStripButton;
-@synthesize animalsButton, sambaButton, capoeiraButton, selectedClipFrame;
+@synthesize animalsButton, sambaButton, capoeiraButton, selectedClipFrame, currentPage;
 
 - (IBAction)globePressed:(id)sender {
 	
@@ -70,13 +70,13 @@
 
 - (void) showContent {
 	
-	//TODO this is all hardcoded, sorry
+	//TODO all this is all hardcoded at the moment, sorry
 	
 	self.contentScroller.contentSize = CGSizeMake(self.contentScroller.frame.size.width * 4, 
 												  self.contentScroller.frame.size.height);
 	
 	
-	CGRect contentRect = self.contentScroller.bounds;
+	CGRect contentRect = CGRectMake(0, 0, self.contentScroller.frame.size.width, self.contentScroller.frame.size.height);
 
 	UIImageView *imageView = [[[UIImageView alloc] initWithFrame:contentRect] autorelease];
 	imageView.contentMode = UIViewContentModeCenter;
@@ -137,6 +137,7 @@
 	CGFloat pageWidth = scrollView.frame.size.width;
 	int oldPage = currentPage;
     currentPage = floor((scrollView.contentOffset.x - pageWidth / 2) / pageWidth) + 1;
+	NSLog(@"currentPage = %i",currentPage);
 	if(currentPage != 1) {
 		[self stopClip];
 	} else if (currentPage == 1) {
@@ -146,7 +147,7 @@
 	if (oldPage != currentPage) {
 		[UIView beginAnimations:@"slide" context:nil];
 		CGRect selectedFrame = selectedClipFrame.frame;
-		selectedFrame.origin.x += selectedFrame.size.width;
+		selectedFrame.origin.x = 197 + (selectedFrame.size.width * currentPage);
 		selectedClipFrame.frame = selectedFrame;
 		[UIView commitAnimations];
 	}
@@ -199,8 +200,17 @@
 	self.sambaButton.alpha = 1;
 	self.capoeiraButton.alpha = 1;
 
-	
 	[UIView commitAnimations];
+	CGRect selectedFrame = selectedClipFrame.frame;
+	selectedFrame.origin.x = 197;
+	selectedClipFrame.frame = selectedFrame;
+	
+	currentPage = 0;
+	[self.contentScroller scrollRectToVisible:CGRectMake(0, 0, 
+														 self.contentScroller.frame.size.width, 
+														 self.contentScroller.frame.size.height)
+									 animated:NO];
+	[self.contentScroller.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
 }
 
 - (IBAction)contentStripButtonPressed {

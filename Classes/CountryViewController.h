@@ -35,6 +35,7 @@
 @property(nonatomic, retain) IBOutlet UIButton *sambaButton;
 @property(nonatomic, retain) IBOutlet UIButton *capoeiraButton;
 @property(nonatomic, retain) IBOutlet UIImageView *selectedClipFrame;
+@property int currentPage;
 
 - (IBAction)globePressed:(id)sender;
 - (IBAction)animalsButtonPressed;

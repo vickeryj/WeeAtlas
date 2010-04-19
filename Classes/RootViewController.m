@@ -66,6 +66,7 @@
 	
 	[self.view addSubview:weeAtlasViewController.view];
 	[weeAtlasViewController shrinkCountryGrowMap];
+	countryViewController.currentPage = 0;
 }
 
 - (void)playCountryName {
